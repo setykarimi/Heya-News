@@ -1,9 +1,8 @@
 import Bg from '../assets/images/Background.png';
 import NewsBanner from '../components/banner/newsBanner';
-import AllArticles from '../components/card/allArticles';
 import PopularArticles from '../components/card/popularArticle';
 import SearchArticle from '../components/form/Search';
-import CaseStudies from '../components/slider/caseStudies';
+import TodayHeadlines from '../components/card/components/todayHeadlines';
 const Home = () => {
 
     return (
@@ -17,7 +16,7 @@ const Home = () => {
                 <PopularArticles />
                 {/* <RecentArticles /> */}
                 {/* <CaseStudies /> */}
-                <AllArticles />
+                <TodayHeadlines />
             </div>
         </div>
     )
