@@ -32,7 +32,7 @@ const CardExplore = ({ type, date, title, avatar, author, img }) => {
                 </div>
             </div>
 
-            <img src={img} alt="" className="rounded-xl h-full w-full object-cover" />
+            <img src={img} alt="" className="rounded-xl h-[8.5rem] w-full object-cover" />
         </div>
     );
 }
