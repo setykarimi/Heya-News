@@ -1,17 +1,18 @@
-import Image from '../../assets/images/newsBanner.webp';
+import { Link } from 'react-router-dom';
+import Image from '../../assets/images/Banner.png';
+import avatar from '../../assets/images/people/boyOne.png';
 
 const NewsBanner = () => {
     return (
-        <div className='xl:w-9/12 lg:w-10/12 md:w-full mx-auto p-1 bg-white rounded-2xl lg:mt-32 md:mt-12 mt-10'>
-            <div className="md:grid flex flex-col grid-cols-2">
-                <img src={Image} alt="NewsBanner" className='rounded-tl-2xl md:rounded-bl-2xl lg:rounded-tr-none rounded-tr-2xl md:h-full h-64 object-cover' />
-                <div className='rounded-tr-2xl rounded-br-2xl md:rounded-bl-none rounded-bl-2xl bg-white md:p-4 p-3 flex flex-col gap-2 justify-between '>
-                    <span className="font-light bg-green-600 text-white w-fit px-2 py-1 rounded-full text-xs block">FEATURED</span>
-                    <h4 className='text-gray-950 font-bold  text-2xl '>Cheap Airline Tickets Great Ways To Save</h4>
-                    <p className='text-gray-800 font-light text-justify'>In this digital generation where information can be easily obtained within seconds, business cards since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+        <div className='p-1 rounded-2xl'>
+            <div className="md:grid flex flex-col grid-cols-2 gap-6">
+                <img src={Image} alt="NewsBanner" className='rounded-2xl md:h-full h-60 object-cover' />
+                <div className='flex flex-col gap-2 justify-between'>
+                    <h2 className='text-gray-950 font-bold xl:text-5xl md:text-2xl text-xl'>Cheap Airline Tickets Great Ways To Save</h2>
+                    <p className='text-gray-800 font-light text-justify'><span className='font-medium block'>In this digital generation where information can be easily obtained within seconds, business cards since the 1500s.</span> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Dived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.  It has survived not only five centuries, but also the leap into electronic typesetting, remaining not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Dived not only five  <Link to="" className='font-medium'>Read more ...</Link></p>
                     <div className='flex justify-between items-center'>
-                        <div className='flex'>
-                            <img src="" alt="" />
+                        <div className='flex items-center gap-2'>
+                            <img src={avatar} alt="avatar" className='rounded-full h-8 w-8 object-cover'/>
                             <div>
                                 <span className='block font-medium text-sm'>Viola Manisa</span>
                             </div>
