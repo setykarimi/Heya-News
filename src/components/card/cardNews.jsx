@@ -38,7 +38,7 @@ const CardNews = ({ img, badge, type, date, title, author, avatar }) => {
             </div>
 
             <div className={`absolute bottom-12 -right-6 bg-white p-5 rounded-lg shadow-xl flex flex-col gap-3 transition-all
-            ${dropDown ? "opacity-1 visible z-10" : "opacity-0 invisible"}`}>
+            ${dropDown ? "block z-10" : "hidden"}`}>
                 <button className='text-sm text-left'>Like</button>
                 <button className='text-sm text-left'>Read more</button>
             </div>
