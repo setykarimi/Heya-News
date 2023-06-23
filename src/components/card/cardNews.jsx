@@ -15,7 +15,7 @@ const CardNews = ({ img, badge, type, date, title, author, avatar }) => {
             {badge && <span className="badge rounded-full bg-blue-500 text-white text-xs font-light block absolute top-3 left-3 py-1 px-2">
                 {badge}</span>}
 
-            <div className='flex flex-col gap-2 p-3 '>
+            <div className='flex flex-col gap-2 p-3'>
                 <div className='flex justify-between'>
                     <span className=' text-gray-400 text-xs block font-light'>{type} News</span>
                     <span className='text-gray-400 text-xs font-light'>{date} Days Ago</span>
