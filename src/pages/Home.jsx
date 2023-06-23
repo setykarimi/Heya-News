@@ -6,18 +6,14 @@ import TodayHeadlines from '../components/card/components/todayHeadlines';
 const Home = () => {
 
     return (
-        <div>
-            <div style={{ background: `url(${Bg})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'top center', backgroundSize: '100%' }} className='md:pt-60 pt-24 lg:px-10 px-4 bg-transparent'>
-                <SearchArticle />
-                <NewsBanner />
-            </div>
+        <div className='xl:w-10/12 lg:w-10/12 md:w-full mx-auto '>
 
-           
-                <PopularArticles />
-                {/* <RecentArticles /> */}
-                {/* <CaseStudies /> */}
-                <TodayHeadlines />
-            
+            <SearchArticle />
+            <NewsBanner />
+            <PopularArticles />
+            {/* <CaseStudies />*/}
+            <TodayHeadlines />
+
         </div>
     )
 }
