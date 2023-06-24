@@ -35,7 +35,7 @@ const Navbar = ({ showMenu, setShowMenu }) => {
             <div className="xl:container mx-auto flex justify-between items-center">
                 <img src={Logo} alt='heya' className='w-16' />
 
-                <div className={`flex lg:flex-row flex-col lg:static fixed top-0 bottom-0 transition-all z-50 ${!showMenu ? "-right-96" : "right-0 p-4"}  lg:w-2/3 w-3/4 bg-white text-gray-900 lg:h-fit h-[103vh] gap-4 items-center`}>
+                <div className={`flex lg:flex-row flex-col lg:static fixed top-0 bottom-0 transition-all z-50 ${!showMenu ? "-right-[100rem]" : "right-0 p-4"}  lg:w-2/3 md:w-1/2 w-3/4 bg-white text-gray-900 lg:h-fit h-[103vh] gap-4 items-center`}>
                     <div className=' w-full mx-auto '>
                         <div className="items-center bg-gray-100 rounded-full p-1 flex gap-2 ">
                             <SearchNormal1 size="24" color="#959EAD" className='ml-2' />
