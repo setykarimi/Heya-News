@@ -55,7 +55,7 @@ export default function PopularArticles() {
                 <p className='text-gray-500 mt-2 font-light'>We share common trends, startegies ideas, opinions, short & long stories from the team behind company.</p>
                 <Link to='' className=' outline-blue-500 h-full text-gray-400 text-sm  rounded-lg whitespace-nowrap'>See more</Link>
             </div>
-            <div className="grid xl:grid-cols-4 md:grid-cols-3 lg:gap-2 grid-cols-1 gap-4">
+            <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 lg:gap-2 grid-cols-1 gap-4">
                 {
                     news.map(({img, badge, type, date, title, author, avatar}) => <CardNews img={img} badge={badge} type={type} date={date} title={title} author={author} avatar={avatar}/>)
                 }
