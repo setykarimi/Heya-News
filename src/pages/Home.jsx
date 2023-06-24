@@ -6,16 +6,13 @@ import TodayHeadlines from '../components/card/components/todayHeadlines';
 const Home = () => {
 
     return (
-        <div className='xl:w-10/12 lg:w-10/12 md:w-full mx-auto '>
-
-            <SearchArticle />
+<>
             <NewsBanner />
             <PopularArticles />
             {/* <CaseStudies />*/}
             <TodayHeadlines />
-
-        </div>
-    )
+</>
+   )
 }
 
 export default Home;
