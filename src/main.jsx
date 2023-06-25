@@ -8,6 +8,7 @@ import {
 import Home from './pages/Home';
 import Layout from './layout/Layout';
 import { QueryClient, QueryClientProvider } from "react-query";
+import News from './pages/News';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/news",
+        element: <News />,
       },
     ]
   }
