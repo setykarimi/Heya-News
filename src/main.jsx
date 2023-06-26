@@ -7,10 +7,10 @@ import {
 } from "react-router-dom";
 import './index.css';
 import Layout from './layout/Layout';
-import Home from './pages/Home';
-import PopularNews from './pages/PopularNews';
-import TodayHeadlines from './pages/TodayHeadlines';
-import News from './pages/News';
+import News from 'Pages/News';
+import Home from 'Pages/Home';
+import PopularNews from 'Pages/PopularNews';
+import TodayHeadlines from 'Pages/TodayHeadlines';
 
 const router = createBrowserRouter([
   {
