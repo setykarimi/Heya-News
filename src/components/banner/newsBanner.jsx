@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import Image from '../../assets/images/Banner.png';
-import avatar from '../../assets/images/people/boyOne.png';
+import Image from 'Images/Banner.png';
+import avatar from 'Images/people/boyOne.png';
 
 const NewsBanner = () => {
     return (
