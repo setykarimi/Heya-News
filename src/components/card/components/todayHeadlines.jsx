@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import motherHood from '../../../assets/images/motherhood/motherhood.png';
-import avatar2 from '../../../assets/images/people/girlFive.png';
-import avatar1 from '../../../assets/images/people/girlFour.png';
-import avatar3 from '../../../assets/images/people/girlThree.png';
-import camping from '../../../assets/images/travel/camping.png';
-import friends from '../../../assets/images/university/freinds.png';
-import rent from '../../../assets/images/travel/rent.png';
-import carbon from '../../../assets/images/carbonMonoxide/carbonMonoxide.png';
-import university from '../../../assets/images/university/university.png';
+import motherHood from 'Images/motherhood/motherhood.png';
+import avatar2 from 'Images/people/girlFive.png';
+import avatar1 from 'Images/people/girlFour.png';
+import avatar3 from 'Images/people/girlThree.png';
+import camping from 'Images/travel/camping.png';
+import friends from 'Images/university/freinds.png';
+import rent from 'Images/travel/rent.png';
+import carbon from 'Images/carbonMonoxide/carbonMonoxide.png';
+import university from 'Images/university/university.png';
 import CardExplore from "../cardExplore";
 
 export default function TodayHeadlines  () {
