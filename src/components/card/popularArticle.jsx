@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
+import friends from 'Images/university/friendship.png';
+import laptopGirl from 'Images/university/laptopGirl.png';
+import camping from 'Images/travel/camping.png';
+import boy from 'Images/people/boyOne.png';
+import girl from 'Images/people/girlOne.png';
+import girl2 from 'Images/people/girlTwo.png';
 import CardNews from './cardNews';
-import friends from '../../assets/images/university/friendship.png';
-import laptopGirl from '../../assets/images/university/laptopGirl.png';
-import camping from '../../assets/images/travel/camping.png';
-import boy from '../../assets/images/people/boyOne.png';
-import girl from '../../assets/images/people/girlOne.png';
-import girl2 from '../../assets/images/people/girlTwo.png';
 
 
 export default function PopularArticles() {
