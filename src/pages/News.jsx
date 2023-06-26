@@ -5,7 +5,7 @@ import CardNewsDetail from "../components/card/cardNewsDetail";
 
 const News = () => {
     async function fetchData() {
-        const { data } = await axios.get(`https://techcrunch.com/wp-json/wp/v2/posts?per_page=3&context=embed`);
+        const { data } = await axios.get(`https://techcrunch.com/wp-json/wp/v2/posts?per_page=5&context=embed`);
         return data;
     }
     const { data, isError, isLoading } = useQuery("news", fetchData);
@@ -15,7 +15,7 @@ const News = () => {
             <CardTitle title="Popular Articles" description="We share common trends, startegies ideas, opinions, short & long stories from the team behind company." />
             <div className="flex flex-col gap-8 mt-12">
             {isLoading ? <div>Loading</div> : isError ? <div>Error</div> :
-                data.map((item) => <CardNewsDetail key={item.id} data={item} />)}
+                data.map((item, index) => <CardNewsDetail key={item.id} data={item} index={index}/>)}
                 </div>
         </div>
     );
