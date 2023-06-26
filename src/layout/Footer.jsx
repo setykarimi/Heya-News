@@ -1,5 +1,5 @@
-import girl from '../assets/images/people/girlThree.png';
-import logo from '../assets/images/Logo.svg';
+import girl from 'Images/people/girlThree.png';
+import logo from 'Images/Logo.svg';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
