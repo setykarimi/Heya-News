@@ -1,7 +1,7 @@
 import { CloseCircle, Menu, SearchNormal1 } from 'iconsax-react';
 import { useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import Logo from '../assets/images/Logo.svg';
+import Logo from 'Images/Logo.svg';
 const Navbar = ({ showMenu, setShowMenu }) => {
     const inputRef = useRef()
     const navigate = useNavigate()
