@@ -1,6 +1,7 @@
-import NewsBanner from '../components/banner/newsBanner';
-import TodayHeadlines from '../components/card/components/todayHeadlines';
-import PopularArticles from '../components/card/popularArticle';
+import NewsBanner from "Components/banner/newsBanner";
+import TodayHeadlines from "Cards/components/todayHeadlines";
+import PopularArticles from "Cards/popularArticle";
+
 
 const Home = () => {
     return (
