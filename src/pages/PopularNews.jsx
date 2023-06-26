@@ -1,7 +1,7 @@
+import CardNewsDetail from "Cards/cardNewsDetail";
+import CardTitle from "Cards/cardTitle";
 import axios from "axios";
-import CardTitle from "../components/card/cardTitle";
 import { useQuery } from "react-query";
-import CardNewsDetail from "../components/card/cardNewsDetail";
 
 const PopularNews = () => {
     async function fetchData() {
