@@ -1,8 +1,7 @@
 import { useLocation } from "react-router-dom";
 import axios from "axios";
-import CardTitle from "../components/card/cardTitle";
 import { useQuery } from "react-query";
-import CardNewsDetail from "../components/card/cardNewsDetail";
+import CardNewsDetail from "Cards/cardNewsDetail";
 
 
 const News = () => {
