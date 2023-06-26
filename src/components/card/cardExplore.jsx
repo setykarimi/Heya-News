@@ -1,5 +1,6 @@
 import { More } from 'iconsax-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const CardExplore = ({ type, date, title, avatar, author, img }) => {
     const [dropDown, setDropDown] = useState(false)
@@ -26,9 +27,7 @@ const CardExplore = ({ type, date, title, avatar, author, img }) => {
                         <span className='text-sm'>{author}</span>
                     </div>
 
-                    <button onClick={openDropDown}>
-                        <More size="16" color="#3B82F6" />
-                    </button>
+                   <Link to="/news/today-headlines" className='text-xs text-gray-400'>Read more</Link>
                 </div>
             </div>
 
