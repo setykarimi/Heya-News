@@ -10,6 +10,7 @@ import Layout from './layout/Layout';
 import Home from './pages/Home';
 import PopularNews from './pages/PopularNews';
 import TodayHeadlines from './pages/TodayHeadlines';
+import News from './pages/News';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/news",
+        element: <News />,
       },
       {
         path: "/news/popular",
