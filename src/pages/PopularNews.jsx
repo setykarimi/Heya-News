@@ -3,9 +3,9 @@ import CardTitle from "../components/card/cardTitle";
 import { useQuery } from "react-query";
 import CardNewsDetail from "../components/card/cardNewsDetail";
 
-const News = () => {
+const PopularNews = () => {
     async function fetchData() {
-        const { data } = await axios.get(`https://techcrunch.com/wp-json/wp/v2/posts?per_page=5&context=embed`);
+        const { data } = await axios.get(`https://techcrunch.com/wp-json/wp/v2/posts?per_page=5&context=embed&search=popular`);
         return data;
     }
     const { data, isError, isLoading } = useQuery("news", fetchData);
@@ -21,4 +21,4 @@ const News = () => {
     );
 }
 
-export default News;
+export default PopularNews;
