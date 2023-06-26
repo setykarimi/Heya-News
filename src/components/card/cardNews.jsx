@@ -1,9 +1,10 @@
 import { More } from 'iconsax-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const CardNews = ({ img, badge, type, date, title, author, avatar }) => {
     const [dropDown, setDropDown] = useState(false)
-    
+
     const openDropDown = () => {
         setDropDown(!dropDown)
     }
@@ -40,7 +41,7 @@ const CardNews = ({ img, badge, type, date, title, author, avatar }) => {
             <div className={`absolute bottom-12 -right-6 bg-white p-5 rounded-lg shadow-xl flex flex-col gap-3 transition-all
             ${dropDown ? "block z-10" : "hidden"}`}>
                 <button className='text-sm text-left'>Like</button>
-                <button className='text-sm text-left'>Read more</button>
+                <Link to="/news/popular" className='text-sm text-left'>Read more</Link>
             </div>
         </div>
     );
