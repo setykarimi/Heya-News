@@ -33,8 +33,10 @@ body{
   transition: .3s;
   width: 100%;
   z-index: 99;
+  display: none;
 }
 
 .overlay.show{
   opacity: 1;
+  display: block;
 }
