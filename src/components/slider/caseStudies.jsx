@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Navigation } from "swiper";
 import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Image from '../../assets/images/newsBanner.webp';
+import Image from 'Images/newsBanner.webp';
 
 const Card = () => {
     return (
