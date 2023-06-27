@@ -11,8 +11,13 @@ import News from 'Pages/News';
 import Home from 'Pages/Home';
 import PopularNews from 'Pages/PopularNews';
 import TodayHeadlines from 'Pages/TodayHeadlines';
+import Login from 'Pages/Login';
 
 const router = createBrowserRouter([
+  {
+    path: "/login",
+    element: <Login />,
+  },
   {
     element: <Layout />,
     children: [
@@ -24,6 +29,7 @@ const router = createBrowserRouter([
         path: "/news",
         element: <News />,
       },
+
       {
         path: "/news/popular",
         element: <PopularNews />,
