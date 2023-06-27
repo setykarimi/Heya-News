@@ -6,6 +6,7 @@
         "Images/*": ["./src/assets/images/*"],
         "Pages/*": ["./src/pages/*"],
         "Cards/*": ["./src/components/card/*"],
+        "Layout/*": ["./src/layout/*"],
       }
     }
   }
