@@ -9,6 +9,9 @@ export default {
       screens: {
         xl: '1436px',
         lg: '1200px'
+      },
+      fontSize: {
+        xs: '10px'
       }
     },
   },
