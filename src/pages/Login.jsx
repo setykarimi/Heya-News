@@ -4,11 +4,14 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useFormik } from "formik";
 import * as Yup from 'yup'
 import { toast } from 'react-toastify';
+import { useDispatch } from 'react-redux';
+import { ADD_USER_INFO } from 'Services/reducers/auth';
 
 
 const Login = () => {
 
     const navigate = useNavigate()
+    const dispatch = useDispatch()
     const initialValues = {
         email: "",
         password: "",
@@ -18,18 +21,19 @@ const Login = () => {
     const validationSchema = Yup.object({
         email: Yup.string().required("Email is required"),
         password: Yup.string().required("Password is required").min(8, 'Password is too short - should be 8 chars minimum.')
-        .matches(/[a-zA-Z]/, 'Password can only contain Latin letters.'),
+            .matches(/[a-zA-Z]/, 'Password can only contain Latin letters.'),
         check: Yup.boolean()
-        .required("Remember for 30 days must be accepted.")
-        .oneOf([true], "Remember for 30 days must be accepted.")
+            .required("Remember for 30 days must be accepted.")
+            .oneOf([true], "Remember for 30 days must be accepted.")
     })
 
     const onSubmit = (values) => {
         toast.success("Welcome back!")
-        localStorage.setItem('user info', JSON.stringify({
+        localStorage.setItem('auth', JSON.stringify({
             email: values.email,
             password: values.password
         }));
+        dispatch(ADD_USER_INFO())
         navigate("/")
     }
 
@@ -55,7 +59,7 @@ const Login = () => {
 
                                 <div className="flex items-center justify-between mb-4">
                                     <div className='flex items-center relative'>
-                                        <input type="checkbox" name="check"  onChange={formik.handleChange} onBlur={formik.handleBlur} className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded " />
+                                        <input type="checkbox" name="check" onChange={formik.handleChange} onBlur={formik.handleBlur} className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded " />
                                         <label htmlFor="check" className={`ml-1 text-sm ${formik.errors.check && formik.touched.check ? "text-red-500" : "text-gray-700"}`}>Remember for 30 days </label>
                                     </div>
 
