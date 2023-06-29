@@ -34,10 +34,10 @@ const Login = () => {
 
     return (<>
         {/* <Navbar /> */}
-        <main className="xl:container mx-auto xl:px-0 px-4">
+        <main className="xl:container mx-auto ">
             <div className="md:w-full mx-auto">
                 <div className="grid md:grid-cols-2 h-[100vh]">
-                    <div className='flex h-full justify-center items-center'>
+                    <div className='flex h-full justify-center items-center md:p-4 p-8 z-10'>
                         <div className='flex flex-col gap-6 lg:w-2/3 md:w-3/4 w-full'>
                             <h3 className='font-bold text-3xl'>Welcome back</h3>
                             <span className='font-light text-gray-500 text-sm'>Welcome back! Please enter your details</span>
@@ -63,9 +63,9 @@ const Login = () => {
                             </form>
                         </div>
                     </div>
-                    <div className='flex flex-col h-full justify-center items-center bg-white'>
-                        <div className='w-40 h-40 bg-blue-500 rounded-full'></div>
-                        <div className='w-60 h-40 backdrop-blur-xl bg-white/30 -mt-20'></div>
+                    <div className='md:flex flex-col h-full justify-center items-center bg-white contents'>
+                        <div className='w-40 h-40 bg-blue-500 rounded-full md:static absolute top-[2rem] left-0 right-0 md:m-0 m-auto'></div>
+                        <div className='w-60 h-40 backdrop-blur-xl bg-white/30 md:-mt-20 md:static absolute top-[7rem] left-0 md:m-0 right-0 m-auto'></div>
                     </div>
                 </div>
             </div>
