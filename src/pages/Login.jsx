@@ -3,6 +3,7 @@ import logo from 'Images/Logo.svg'
 import { Link } from 'react-router-dom';
 import { useFormik } from "formik";
 import * as Yup from 'yup'
+import { toast } from 'react-toastify';
 
 
 const Login = () => {
@@ -23,6 +24,7 @@ const Login = () => {
     })
 
     const onSubmit = (values) => {
+        toast.success("Welcome back!")
         console.log(values);
     }
 
