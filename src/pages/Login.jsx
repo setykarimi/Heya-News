@@ -15,10 +15,11 @@ const Login = () => {
 
     const validationSchema = Yup.object({
         email: Yup.string().required("Email is required"),
-        password: Yup.string().required("Password is required"),
+        password: Yup.string().required("Password is required").min(8, 'Password is too short - should be 8 chars minimum.')
+        .matches(/[a-zA-Z]/, 'Password can only contain Latin letters.'),
         check: Yup.boolean()
-        .required("The terms and conditions must be accepted.")
-        .oneOf([true], "The terms and conditions must be accepted.")
+        .required("Remember for 30 days must be accepted.")
+        .oneOf([true], "Remember for 30 days must be accepted.")
     })
 
     const onSubmit = (values) => {
