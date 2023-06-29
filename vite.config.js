@@ -11,6 +11,7 @@ export default defineConfig({
       Layout: "/src/layout",
       Images:  "/src/assets/images/",
       Pages:  "/src/pages/",
+      Services:  "/src/services/",
     },
   },
 })
