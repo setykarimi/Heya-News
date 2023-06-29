@@ -1,6 +1,6 @@
 import Input from 'Components/form/input';
 import logo from 'Images/Logo.svg'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useFormik } from "formik";
 import * as Yup from 'yup'
 import { toast } from 'react-toastify';
@@ -8,6 +8,7 @@ import { toast } from 'react-toastify';
 
 const Login = () => {
 
+    const navigate = useNavigate()
     const initialValues = {
         email: "",
         password: "",
@@ -25,7 +26,11 @@ const Login = () => {
 
     const onSubmit = (values) => {
         toast.success("Welcome back!")
-        console.log(values);
+        localStorage.setItem('user info', JSON.stringify({
+            email: values.email,
+            password: values.password
+        }));
+        navigate("/")
     }
 
     const formik = useFormik({

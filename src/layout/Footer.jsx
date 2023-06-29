@@ -61,7 +61,7 @@ const Footer = () => {
                         </div>
 
                         <div className="flex justify-center items-center relative">
-                            <div className="bg-white p-1 lg:w-1/2 z-10 rounded-2xl">
+                            <div className="bg-white p-1 lg:w-1/2 rounded-2xl" style={{zIndex: '1'}}>
                                 <img src={girl} alt="email" className='w-full rounded-2xl object-cover object-top h-56' />
                                 <div className='p-3'>
                                     <span className='block font-medium text-lg mb-2'>The best articles every week</span>

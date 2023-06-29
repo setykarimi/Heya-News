@@ -41,7 +41,7 @@ const Navbar = ({ showMenu, setShowMenu }) => {
     }
 
     return (
-        <nav className="mx-auto sticky shadow-sm top-0 text-gray-900 bg-white xl:px-12 px-6 py-4 mb-10" style={{zIndex: '9999'}}>
+        <nav className="mx-auto sticky shadow-sm top-0 text-gray-900 bg-white xl:px-12 px-6 py-4 mb-10 z-10">
             <div className="xl:container mx-auto flex justify-between items-center">
                 <img src={Logo} alt='heya' className='w-16' />
 
