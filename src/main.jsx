@@ -12,6 +12,9 @@ import Home from 'Pages/Home';
 import PopularNews from 'Pages/PopularNews';
 import TodayHeadlines from 'Pages/TodayHeadlines';
 import Login from 'Pages/Login';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const router = createBrowserRouter([
   {
@@ -48,6 +51,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
+      <ToastContainer position="top-center"
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss={false}
+        draggable
+        pauseOnHover={false}
+        theme="colored" />
       <RouterProvider router={router} />
     </QueryClientProvider>
   </React.StrictMode>,
