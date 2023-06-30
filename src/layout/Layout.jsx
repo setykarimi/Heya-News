@@ -3,13 +3,15 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { useState } from "react";
 import { ToastContainer } from "react-toastify";
+import { useTranslation } from "react-i18next";
 
 const Layout = () => {
     const [showMenu, setShowMenu] = useState(false)
+    const { i18n  } = useTranslation();
 
-    console.log(showMenu);
+    console.log(i18n.language);
     return (
-        <>
+        <div style={{direction: i18n.language == "fa" ? "rtl":"ltr", fontFamily: i18n.language == "fa"  && "Calibri"}}>
             <ToastContainer position="top-center"
                 hideProgressBar={false}
                 newestOnTop={false}
@@ -27,7 +29,7 @@ const Layout = () => {
                 </div>
             </main>
             <Footer />
-        </>
+        </div>
     );
 }
 
