@@ -1,4 +1,11 @@
 {
-    "welcome": "Welcome to my website!"
-   
+    "welcome": "Welcome to my website!",
+    "navbar": {
+        "home": "Home",
+        "pages": "Pages",
+        "docs": "Docs",
+        "login": "Login",
+        "search": "جستجو",
+        "searchArticle": "Search article"
+    }
 }

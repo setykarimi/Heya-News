@@ -1,3 +1,11 @@
 {
-    "welcome": "خوش آمدید"
+    "welcome": "Welcome to my website!",
+    "navbar": {
+        "home": "خانه",
+        "pages": "صفحات",
+        "docs": "مستندات",
+        "login": "ورود",
+        "search": "جستجو",
+        "searchArticle": "جستو برترین خبر‌ها"
+    }
 }
