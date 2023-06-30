@@ -57,7 +57,9 @@ const Navbar = ({ showMenu, setShowMenu }) => {
                         </div>
                     </div>
                     {menuItem.map(({ title, link }) => <Link key={title} to={link} className='font-light'>{title}</Link>)}
-                    <Link to="/login" className='border border-gray-200 whitespace-nowrap py-2 px-6 ml-4 rounded-full font-medium'>{t("navbar.login")}</Link>
+                    <Link to="/login" className='border border-gray-200 text-sm whitespace-nowrap py-2 px-6 ml-4 rounded-full font-medium'>{t("navbar.login")}</Link>
+
+                    <button>en</button>
                 </div>
 
                 <button className='lg:hidden' onClick={showMenuHandler}>
