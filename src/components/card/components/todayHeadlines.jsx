@@ -70,7 +70,7 @@ export default function TodayHeadlines  () {
                 <Link to='' className=' outline-blue-500 h-full text-gray-400 text-sm  rounded-lg whitespace-nowrap'>See more</Link>
             </div>
             <div className="grid lg:md:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 mb-8">
-                {news.map(({type, date, title, avatar, author, img})=> <CardExplore 
+                {news.map(({type, date, title, avatar, author, img})=> <CardExplore key={title}
                 type={type} date={date} title={title} avatar={avatar} author={author} img={img}/>)}
             </div>
         </div>

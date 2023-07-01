@@ -80,35 +80,35 @@ const Footer = () => {
                                 Build a modern and creative website with crealand
                             </span>
                             <div className='flex flex-wrap text-gray-500 gap-4 text-sm'>
-                                {socialMedia.map(({ title, to }) => <Link to={to}>{title}</Link>)}
+                                {socialMedia.map(({ title, to }) => <Link key={title} to={to}>{title}</Link>)}
                             </div>
                         </div>
 
                         <div className='flex flex-col gap-4'>
                             <span className='font-medium block text-gray-400'>Product</span>
                             <div className='text-gray-500 flex flex-col gap-2 text-sm'>
-                                {product.map((title) => <Link>{title}</Link>)}
+                                {product.map((title) => <Link key={title}>{title}</Link>)}
                             </div>
                         </div>
 
                         <div className='flex flex-col gap-4'>
                             <span className='font-medium block text-gray-400'>Services</span>
                             <div className='text-gray-500 flex flex-col gap-2 text-sm'>
-                                {services.map((title) => <Link>{title}</Link>)}
+                                {services.map((title) => <Link key={title}>{title}</Link>)}
                             </div>
                         </div>
 
                         <div className='flex flex-col gap-4'>
                             <span className='font-medium block text-gray-400'>Company</span>
                             <div className='text-gray-500 flex flex-col gap-2 text-sm'>
-                                {company.map((title) => <Link>{title}</Link>)}
+                                {company.map((title) => <Link key={title}>{title}</Link>)}
                             </div>
                         </div>
 
                         <div className='flex flex-col gap-4'>
                             <span className='font-medium block text-gray-400'>More</span>
                             <div className='text-gray-500 flex flex-col gap-2 text-sm'>
-                                {more.map((title) => <Link>{title}</Link>)}
+                                {more.map((title) => <Link key={title}>{title}</Link>)}
                             </div>
                         </div>
                     </div>
