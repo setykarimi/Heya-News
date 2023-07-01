@@ -12,10 +12,12 @@ const resources = {
   },
 };
 
+const currLang = localStorage.getItem("lang") ? localStorage.getItem("lang") : "en"
+
 i18n.use(initReactI18next).init({
   resources,
-  lng: "en",
-  fallbackLng: "en",
+  lng: currLang,
+  fallbackLng: currLang,
   interpolation: {
     escapeValue: false,
   },
