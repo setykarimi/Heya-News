@@ -60,7 +60,7 @@ const Login = () => {
                                 <div className="flex items-center justify-between mb-4">
                                     <div className='flex items-center relative'>
                                         <input type="checkbox" name="check" onChange={formik.handleChange} onBlur={formik.handleBlur} className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded " />
-                                        <label htmlFor="check" className={`ml-1 text-sm ${formik.errors.check && formik.touched.check ? "text-red-500" : "text-gray-700"}`}>Remember for 30 days </label>
+                                        <label htmlFor="check" className={`ml-1 text-sm ${formik.errors.check && formik.touched.check ? "text-red-600" : "text-gray-700"}`}>Remember for 30 days </label>
                                     </div>
 
                                     <Link to="/" className='text-sm text-blue-500 font-medium'>Forgot Password</Link>
