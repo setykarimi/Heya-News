@@ -1,9 +1,12 @@
-import { CloseCircle, Menu, SearchNormal1 } from 'iconsax-react';
+import { ArrowCircleDown, ArrowDown, ArrowDown2, CloseCircle, Menu, SearchNormal1 } from 'iconsax-react';
 import { useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Logo from 'Images/Logo.svg';
 import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+
 const Navbar = ({ showMenu, setShowMenu }) => {
+    const auth = useSelector(state => state.auth)
     const { t } = useTranslation();
     const inputRef = useRef()
     const navigate = useNavigate()
@@ -43,6 +46,8 @@ const Navbar = ({ showMenu, setShowMenu }) => {
         })
     }
 
+    console.log(auth.email ? '-' : '---');
+
     return (
         <nav className="mx-auto sticky shadow-sm top-0 text-gray-900 bg-white xl:px-12 px-6 py-4 mb-10 z-10">
             <div className="xl:container mx-auto flex justify-between items-center">
@@ -57,8 +62,12 @@ const Navbar = ({ showMenu, setShowMenu }) => {
                         </div>
                     </div>
                     {menuItem.map(({ title, link }) => <Link key={title} to={link} className='font-light'>{title}</Link>)}
-                    <Link to="/login" className='border border-gray-200 text-sm whitespace-nowrap py-2 px-6 ml-4 rounded-full font-medium'>{t("navbar.login")}</Link>
-
+                    {
+                    auth.email ? <button className='border border-gray-200 text-sm whitespace-nowrap py-2 px-6 ml-4 rounded-full font-medium flex items-center gap-1'>My blog 
+                    <ArrowDown2 size={16}/>
+                    </button> :
+                        <Link to="/login" className='border border-gray-200 text-sm whitespace-nowrap py-2 px-6 ml-4 rounded-full font-medium'>{t("navbar.login")}</Link>
+                    }
                     <button>en</button>
                 </div>
 
