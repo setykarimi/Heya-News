@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 
 const Navbar = ({ showMenu, setShowMenu }) => {
     const auth = useSelector(state => state.auth)
-    const { t } = useTranslation();
+    const { t,i18n } = useTranslation();
     const inputRef = useRef()
     const navigate = useNavigate()
 
@@ -46,7 +46,10 @@ const Navbar = ({ showMenu, setShowMenu }) => {
         })
     }
 
-    console.log(auth.email ? '-' : '---');
+    const changeLangHandler = () => {
+        localStorage.setItem("lang", i18n.language == "en" ? "fa" : "en")
+console.log(i18n.language);
+    }
 
     return (
         <nav className="mx-auto sticky shadow-sm top-0 text-gray-900 bg-white xl:px-12 px-6 py-4 mb-10 z-10">
@@ -68,7 +71,7 @@ const Navbar = ({ showMenu, setShowMenu }) => {
                     </button> :
                         <Link to="/login" className='border border-gray-200 text-sm whitespace-nowrap py-2 px-6 ml-4 rounded-full font-medium'>{t("navbar.login")}</Link>
                     }
-                    <button>en</button>
+                    <button onClick={changeLangHandler}>en</button>
                 </div>
 
                 <button className='lg:hidden' onClick={showMenuHandler}>
