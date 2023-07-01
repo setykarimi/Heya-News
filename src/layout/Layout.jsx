@@ -9,7 +9,6 @@ const Layout = () => {
     const [showMenu, setShowMenu] = useState(false)
     const { i18n  } = useTranslation();
 
-    console.log(i18n.language);
     return (
         <div style={{direction: i18n.language == "fa" ? "rtl":"ltr", fontFamily: i18n.language == "fa"  && "Calibri"}}>
             <ToastContainer position="top-center"
