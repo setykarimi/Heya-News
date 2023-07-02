@@ -1,6 +1,6 @@
 const DashboardSidebar = () => {
     return ( 
-        <div>DashboardSidebar
+        <div className="bg-white">DashboardSidebar
         </div>
      );
 }
