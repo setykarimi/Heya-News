@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const DashboardLayout = () => {
     return (
         <main className="xl:container mx-auto p-4 ">
-            <div className="grid grid-cols-5 gap-4">
+            <div className="grid grid-cols-5 gap-4 ">
                 <DashboardSidebar />
                 <div className="col-span-4">
                     <div className="grid grid-cols-4">
