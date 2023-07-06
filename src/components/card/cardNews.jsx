@@ -11,7 +11,7 @@ const CardNews = ({ img, badge, type, date, title, author, avatar }) => {
 
     return (
         <div className="p-1 rounded-2xl relative bg-white w-full">
-            <img src={img} alt="" className='h-36 rounded-2xl w-full object-cover' />
+            <img src={img} alt={title} loading="lazy" className='h-36 rounded-2xl w-full object-cover' />
 
             {badge && <span className="badge rounded-full bg-blue-500 text-white text-xs font-light block absolute top-3 left-3 py-1 px-2">
                 {badge}</span>}
