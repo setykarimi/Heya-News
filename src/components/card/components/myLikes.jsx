@@ -20,10 +20,10 @@ const MyLikes = () => {
     ]
     return (
         <div className="bg-white rounded-xl h-fit">
-            <h2 className='text-xl text-blue-gray-950 font-bold mb-4 p-8 border-b border-gray-100'>
+            <h2 className='text-xl text-blue-gray-950 font-bold mb-4 md:p-8 p-4 border-b border-gray-100'>
                 My Likes
             </h2>
-            <div className="p-4 flex flex-col gap-4">
+            <div className="p-4 grid xl:grid-cols-1 md:grid-cols-2 grid-cols-1 gap-4">
                 {like.map((item) => <CardLike img={item.img} content={item.content} />)}
                 </div>
         </div>
