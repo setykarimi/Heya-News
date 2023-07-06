@@ -1,7 +1,9 @@
 import profile from 'Images/people/girlTwo.png'
+import { useSelector } from 'react-redux';
 import { Link } from "react-router-dom";
 
 const CardProfile = () => {
+    const auth = useSelector(state => state.auth)
     return (
         <div className="bg-white rounded-xl h-fit gap-4">
             <div className='bg-blue-500 rounded-tr-xl rounded-tl-xl p-12'>
@@ -19,7 +21,7 @@ const CardProfile = () => {
                 </span>
                 <Link to="">
                     <span className="block text-center font-medium text-sm">
-                        www.setyDev.ir
+                    {auth.email}
                     </span>
                 </Link>
                 <span className="block text-center text-sm text-gray-700">
