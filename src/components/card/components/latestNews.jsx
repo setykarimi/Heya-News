@@ -36,7 +36,7 @@ const LatestNews = () => {
                 {news.map((item) => <CardArticle data={item} />)}
             </div>
             <div className='flex items-center justify-center pb-4'>
-                <Link to="" className='text-sm flex items-center gap-1 text-gray-700 font-light'>
+                <Link to="/news/popular" className='text-sm flex items-center gap-1 text-gray-700 font-light'>
                     <Link2 color='#3B82F6' size="20" />
                     See More
                 </Link>
