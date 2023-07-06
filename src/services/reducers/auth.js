@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { Python } from 'iconsax-react'
 
 const initialState = {
     email: JSON.parse(localStorage.getItem('auth'))?.email,
