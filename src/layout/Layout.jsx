@@ -14,7 +14,7 @@ const Layout = () => {
             <div className={`overlay cursor-pointer ${showMenu ? "show" : ""}`} onClick={() => setShowMenu(false)}></div>
             <Navbar showMenu={showMenu} setShowMenu={setShowMenu} />
             <main className="xl:container mx-auto xl:px-0 px-4">
-                <div className="xl:w-10/12 lg:w-10/12 md:w-full mx-auto">
+                <div className="xl:w-10/12 lg:w-11/12 md:w-full mx-auto">
                     <Outlet />
                 </div>
             </main>
