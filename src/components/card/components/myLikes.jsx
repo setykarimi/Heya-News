@@ -19,7 +19,7 @@ const MyLikes = () => {
         }
     ]
     return (
-        <div className="bg-white rounded-xl">
+        <div className="bg-white rounded-xl h-fit">
             <h2 className='text-xl text-blue-gray-950 font-bold mb-4 p-8 border-b border-gray-100'>
                 My Likes
             </h2>
