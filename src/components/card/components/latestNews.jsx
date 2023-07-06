@@ -29,10 +29,10 @@ const LatestNews = () => {
     ]
     return (
         <div className="bg-white rounded-xl">
-            <h2 className='text-xl text-blue-gray-950 font-bold mb-4 p-8 border-b border-gray-100'>
+            <h2 className='text-xl text-blue-gray-950 font-bold mb-4 md:p-8 p-4 border-b border-gray-100'>
                 Latest News
             </h2>
-            <div className="grid grid-cols-3 gap-8 p-8">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 md:p-8 p-4">
                 {news.map((item) => <CardArticle data={item} />)}
             </div>
             <div className='flex items-center justify-center pb-4'>
