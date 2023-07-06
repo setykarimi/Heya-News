@@ -23,7 +23,7 @@ const CardExplore = ({ type, date, title, avatar, author, img }) => {
 
                 <div className='flex justify-between items-center'>
                     <div className='flex gap-1 items-center'>
-                        <img src={avatar} alt="" className='w-6 h-6 object-cover rounded-full' />
+                        <img src={avatar} alt="avatar" loading="lazy" className='w-6 h-6 object-cover rounded-full' />
                         <span className='text-sm'>{author}</span>
                     </div>
 
