@@ -5,7 +5,7 @@ import camping from 'Images/travel/camping.png';
 import friends from 'Images/university/friendship.png';
 import laptopGirl from 'Images/university/laptopGirl.png';
 import { Link } from 'react-router-dom';
-import CardNews from './cardNews';
+import CardNews from '../cardNews';
 
 
 export default function PopularArticles() {
