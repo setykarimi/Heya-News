@@ -9,8 +9,7 @@ const Layout = () => {
     const { i18n  } = useTranslation();
 
     return (
-        <div style={{direction: i18n.language == "fa" ? "rtl":"ltr", fontFamily: i18n.language == "fa"  && "Calibri"}}>
-           
+        <div style={{direction: i18n.language == "fa" ? "rtl":"ltr", fontFamily: i18n.language == "fa"  && "Vazir"}}>
             <div className={`overlay cursor-pointer ${showMenu ? "show" : ""}`} onClick={() => setShowMenu(false)}></div>
             <Navbar showMenu={showMenu} setShowMenu={setShowMenu} />
             <main className="xl:container mx-auto xl:px-0 px-4">

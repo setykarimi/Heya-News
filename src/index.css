@@ -13,6 +13,11 @@
   -webkit-text-size-adjust: 100%;
 }
 
+@font-face {
+  font-family: 'Vazir';
+  src: url(./assets/fonts/Vazir-FD-WOL.ttf);
+}
+
 html{
   scroll-behavior: smooth;
 }
