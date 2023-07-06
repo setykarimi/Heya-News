@@ -3,7 +3,7 @@ import { TickCircle } from 'iconsax-react';
 export const CardArticle = ({ data }) => {
     return (
         <div>
-            <img src={data.img} alt={data.title} className='w-full object-cover rounded-lg' />
+            <img src={data.img} alt={data.title} loading="lazy" className='w-full object-cover rounded-lg' />
             <div className='bg-white border border-gray-200 flex flex-col gap-2 p-4 rounded-lg mt-4'>
                 <h3 className='font-medium text-gray-800'>
                     {data.title}
