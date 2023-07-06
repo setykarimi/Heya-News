@@ -16,10 +16,7 @@ const Navbar = ({ showMenu, setShowMenu }) => {
             title: t("navbar.home"),
             link: '/'
         },
-        {
-            title: 'Landings',
-            link: ''
-        },
+    
         {
             title: t("navbar.pages"),
             link: ''
@@ -28,10 +25,7 @@ const Navbar = ({ showMenu, setShowMenu }) => {
             title: t("navbar.docs"),
             link: ''
         },
-        {
-            title: 'Help',
-            link: ''
-        }
+        
     ]
 
     const showMenuHandler = () => {
