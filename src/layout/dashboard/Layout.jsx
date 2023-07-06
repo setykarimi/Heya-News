@@ -1,6 +1,7 @@
 import CardLanguage from "Components/card/cardLanguage";
 import CardProfile from "Components/card/cardProfile";
 import LatestNews from "Components/card/components/latestNews";
+import MyBlog from "Components/card/components/myBlogs";
 import MyLikes from "Components/card/components/myLikes";
 
 const DashboardLayout = () => {
@@ -13,10 +14,9 @@ const DashboardLayout = () => {
                 </div>
                 <div className="col-span-3">
                     <LatestNews />
+                    <MyBlog />
                 </div>
-              
-                    <MyLikes />
-               
+                <MyLikes />
             </div>
         </main>
     );
