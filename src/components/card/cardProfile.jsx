@@ -1,9 +1,15 @@
 import profile from 'Images/people/girlTwo.png'
 import { useSelector } from 'react-redux';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const CardProfile = () => {
     const auth = useSelector(state => state.auth)
+    const navigate = useNavigate()
+    const logoutHandler = () => {   
+        localStorage.removeItem('auth')
+        navigate('/')
+        window.location.reload()
+    }
     return (
         <div className="bg-white rounded-xl h-fit gap-4">
             <div className='bg-blue-500 rounded-tr-xl rounded-tl-xl p-12'>
@@ -42,6 +48,8 @@ const CardProfile = () => {
                         <span className="block text-center text-xs text-gray-500">Following</span>
                     </div>
                 </div>
+
+                <button onClick={logoutHandler} className='text-sm border border-gray-100 w-fit text-gray-500 mx-auto px-4 py-1 rounded-full'>Exit</button>
             </div>
         </div>
     );
