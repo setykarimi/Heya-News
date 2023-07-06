@@ -48,7 +48,7 @@ const Navbar = ({ showMenu, setShowMenu }) => {
 
     const changeLangHandler = () => {
         localStorage.setItem("lang", i18n.language == "en" ? "fa" : "en")
-        console.log(i18n.language);
+        i18n.changeLanguage(i18n.language == "en" ? "fa" : "en");
     }
 
     return (
@@ -74,7 +74,7 @@ const Navbar = ({ showMenu, setShowMenu }) => {
                     }
                     <button onClick={changeLangHandler} className='font-bold text-sm flex items-center'>
                     <Flag size="25" color="#B1CDFB" variant="Bulk"/>
-                    EN
+                   {i18n.language}
                     </button>
                 </div>
 
