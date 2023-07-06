@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const CardProfile = () => {
     return (
-        <div className="bg-white  rounded-xl  gap-4">
+        <div className="bg-white rounded-xl h-fit gap-4">
             <div className='bg-blue-500 rounded-tr-xl rounded-tl-xl p-12'>
             </div>
             <img src={profile} className="w-24 h-24 bg-white -mt-12 mb-4 rounded-full object-cover mx-auto border-2 border-blue-500 p-1" />
