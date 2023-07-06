@@ -2,6 +2,7 @@ import Home from 'Pages/Home';
 import Login from 'Pages/Login';
 import News from 'Pages/News';
 import PopularNews from 'Pages/PopularNews';
+import Profile from 'Pages/Profile';
 import TodayHeadlines from 'Pages/TodayHeadlines';
 import { store } from 'Services/store';
 import React from 'react';
@@ -18,7 +19,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import i18n from '../i18n';
 import './index.css';
 import Layout from './layout/Layout';
-import DashboardLayout from 'Layout/dashboard/Layout';
+
 
 const router = createBrowserRouter([
   {
@@ -36,7 +37,6 @@ const router = createBrowserRouter([
         path: "/news",
         element: <News />,
       },
-
       {
         path: "/news/popular",
         element: <PopularNews />,
@@ -45,18 +45,14 @@ const router = createBrowserRouter([
         path: "/news/today-headlines",
         element: <TodayHeadlines />,
       },
+    
     ]
   },
-  // Profile Dashboard
   {
-    element: <DashboardLayout />,
-    children: [
-      {
-        path: "/profile",
-        element: <Home />,
-      }
-    ]
+    path: "/profile",
+    element: <Profile />,
   }
+ 
 ]);
 
 const queryClient = new QueryClient();
