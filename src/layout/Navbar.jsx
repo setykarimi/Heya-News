@@ -1,4 +1,4 @@
-import { ArrowCircleDown, ArrowDown, ArrowDown2, CloseCircle, Menu, SearchNormal1 } from 'iconsax-react';
+import { ArrowCircleDown, ArrowDown, ArrowDown2, CloseCircle, Flag, LanguageCircle, Menu, Profile, ProfileCircle, SearchNormal1 } from 'iconsax-react';
 import { useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Logo from 'Images/Logo.svg';
@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 
 const Navbar = ({ showMenu, setShowMenu }) => {
     const auth = useSelector(state => state.auth)
-    const { t,i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
     const inputRef = useRef()
     const navigate = useNavigate()
 
@@ -48,7 +48,7 @@ const Navbar = ({ showMenu, setShowMenu }) => {
 
     const changeLangHandler = () => {
         localStorage.setItem("lang", i18n.language == "en" ? "fa" : "en")
-console.log(i18n.language);
+        console.log(i18n.language);
     }
 
     return (
@@ -66,12 +66,16 @@ console.log(i18n.language);
                     </div>
                     {menuItem.map(({ title, link }) => <Link key={title} to={link} className='font-light'>{title}</Link>)}
                     {
-                    auth.email ? <button className='border border-gray-200 text-sm whitespace-nowrap py-2 px-6 ml-4 rounded-full font-medium flex items-center gap-1'>My blog 
-                    <ArrowDown2 size={16}/>
-                    </button> :
-                        <Link to="/login" className='border border-gray-200 text-sm whitespace-nowrap py-2 px-6 ml-4 rounded-full font-medium'>{t("navbar.login")}</Link>
+                        auth.email ? <Link to="/profile" className='border border-gray-200 text-sm whitespace-nowrap py-1 ml-4 rounded-full font-medium flex items-center px-2'>
+                            <ProfileCircle size="28" color="#3B82F6" variant="Bulk" />
+                           <span className='block px-2'> Profile</span>
+                        </Link> :
+                            <Link to="/login" className='border border-gray-200 text-sm whitespace-nowrap py-2 px-6 ml-4 rounded-full font-medium'>{t("navbar.login")}</Link>
                     }
-                    <button onClick={changeLangHandler}>en</button>
+                    <button onClick={changeLangHandler} className='font-bold text-sm flex items-center'>
+                    <Flag size="25" color="#B1CDFB" variant="Bulk"/>
+                    EN
+                    </button>
                 </div>
 
                 <button className='lg:hidden' onClick={showMenuHandler}>
