@@ -6,7 +6,7 @@ const NewsBanner = () => {
     return (
         <div className='p-1 rounded-2xl bg-white'>
             <div className="md:grid flex flex-col grid-cols-2">
-                <img src={Image} alt="NewsBanner" className='rounded-2xl md:h-full h-60 object-cover' />
+                <img src={Image} alt="NewsBanner" loading="lazy" className='rounded-2xl md:h-full h-60 object-cover' />
                 <div className='flex flex-col gap-2 justify-between p-6'>
                     <h2 className='text-gray-950 font-bold xl:text-5xl md:text-2xl text-xl'>Cheap Airline Tickets Great Ways To Save</h2>
                     <p className='text-gray-800 font-light text-justify'><span className='font-medium block'>In this digital generation where information can be easily obtained within seconds, business cards since the 1500s.</span> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Dived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.  It has survived not only five centuries, but also the leap into electronic typesetting, remaining not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Dived not only five  <Link to="" className='font-medium'>Read more ...</Link></p>
