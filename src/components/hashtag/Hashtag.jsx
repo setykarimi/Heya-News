@@ -6,7 +6,7 @@ export default function Hashtags() {
     return (
         <div className="text-gray-500 mt-4 flex flex-wrap items-center">
             <span className="font-light md:mb-0 mb-2 mr-2">Popular tags:</span>
-           <div className="flex gap-2"> {popularTags.map((title) => <Hashtag title={title} />)}
+           <div className="flex gap-2"> {popularTags.map((title) => <Hashtag key={title} title={title} />)}
            </div>
         </div>
     )

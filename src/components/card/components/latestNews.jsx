@@ -33,7 +33,7 @@ const LatestNews = () => {
                 Latest News
             </h2>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 md:p-8 p-4">
-                {news.map((item) => <CardArticle data={item} />)}
+                {news.map((item) => <CardArticle key={data.title} data={item} />)}
             </div>
             <div className='flex items-center justify-center pb-4'>
                 <Link to="/news/popular" className='text-sm flex items-center gap-1 text-gray-700 font-light'>

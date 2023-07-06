@@ -24,7 +24,7 @@ const MyLikes = () => {
                 My Likes
             </h2>
             <div className="p-4 grid xl:grid-cols-1 md:grid-cols-2 grid-cols-1 gap-4">
-                {like.map((item) => <CardLike img={item.img} content={item.content} />)}
+                {like.map((item) => <CardLike key={item.content} img={item.img} content={item.content} />)}
                 </div>
         </div>
     );
