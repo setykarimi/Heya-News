@@ -6,9 +6,12 @@ import friends from 'Images/university/friendship.png';
 import laptopGirl from 'Images/university/laptopGirl.png';
 import { Link } from 'react-router-dom';
 import CardNews from '../cardNews';
+import { useTranslation } from 'react-i18next';
 
 
 export default function PopularArticles() {
+    const { t } = useTranslation();
+
     const news = [
         {
             img: friends,
@@ -50,10 +53,10 @@ export default function PopularArticles() {
 
     return (
         <div className='mt-24'>
-            <h2 className='text-3xl text-gray-800 font-medium'>Popular Articles</h2>
+            <h2 className='text-3xl text-gray-800 font-medium'>{t("popular_articles.popular_article")}</h2>
             <div className='md:flex justify-between items-center mb-4'>
-                <p className='text-gray-500 mt-2 font-light'>We share common trends, startegies ideas, opinions, short & long stories from the team behind company.</p>
-                <Link to='' className=' outline-blue-500 h-full text-gray-400 text-sm  rounded-lg whitespace-nowrap'>See more</Link>
+                <p className='text-gray-500 mt-2 font-light'>{t("popular_articles.desc")}</p>
+                <Link to='' className=' outline-blue-500 h-full text-gray-400 text-sm  rounded-lg whitespace-nowrap'>{t("read_more")}</Link>
             </div>
             <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 lg:gap-2 grid-cols-1 gap-4">
                 {

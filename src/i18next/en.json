@@ -14,5 +14,9 @@
         "author": "Viola Manisa",
         "date": "02 May"
     },
-    "read_more": "Read more"
+    "read_more": "Read more",
+    "popular_articles": {
+        "popular_article": "Popular Articles",
+        "desc": "We share common trends, strategies ideas, opinions, short & long stories from the team behind company."
+    }
 }
