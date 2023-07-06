@@ -1,6 +1,5 @@
-import { Heart, Message, Profile2User } from "iconsax-react";
-import DashboardSidebar from "./Sidebar";
 import CardProfile from "Components/card/cardProfile";
+import LatestNews from "Components/card/components/latestNews";
 
 const DashboardLayout = () => {
     return (
@@ -8,10 +7,10 @@ const DashboardLayout = () => {
             <div className="grid grid-cols-5 gap-4 ">
             <CardProfile />
             <div className="col-span-3">
-                Latest news
+               <LatestNews />
             </div>
             <div>
-                Likes
+               
             </div>
             </div>
         </main>
