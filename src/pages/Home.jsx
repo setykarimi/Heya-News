@@ -5,7 +5,6 @@ import NewsBanner from "Components/banner/newsBanner";
 const Home = () => {
     return (
         <>
-       
             <NewsBanner />
             <PopularArticles />
             <TodayHeadlines />
