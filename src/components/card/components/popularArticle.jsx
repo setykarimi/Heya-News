@@ -4,6 +4,7 @@ import girl2 from 'Images/people/girlTwo.png';
 import camping from 'Images/travel/camping.png';
 import friends from 'Images/university/friendship.png';
 import laptopGirl from 'Images/university/laptopGirl.png';
+import carbon from 'Images/carbonMonoxide/carbonMonoxide.png';
 import { Link } from 'react-router-dom';
 import CardNews from '../cardNews';
 import { useTranslation } from 'react-i18next';
@@ -15,39 +16,39 @@ export default function PopularArticles() {
     const news = [
         {
             img: friends,
-            badge: "University",
-            type: "Trending",
+            badge: t("badge.university"),
+            type: t("type.trending"),
             date: "4",
-            title: "Report reveals ‘disturbing’ trends in academic salaries",
-            author: "Pouria Makhdoomi",
+            title: t("news_list.title1"),
+            author: t("names.name1"),
             avatar: boy
         },
         {
             img: laptopGirl,
-            badge: "Students",
-            type: "Hot",
+            badge: t("badge.students"),
+            type:  t("type.hot"),
             date: "2",
-            title: "Homesickness. One of the first challenges",
-            author: "Ashvaria Miza",
+            title: t("news_list.title2"),
+            author: t("names.name2"),
             avatar: girl2
         },
         {
             img: camping,
-            badge: "Camping",
-            type: "Trending",
+            badge: t("badge.camping"),
+            type: t("type.trending"),
             date: "10",
-            title: "Camping is a broad term but in its essence",
-            author: "Ava Moun",
+            title: t("news_list.title3"),
+            author: t("names.name3"),
             avatar: girl
         },
         {
-            img: friends,
-            badge: "University",
-            type: "Trending",
-            date: "4",
-            title: "Report reveals ‘disturbing’ trends in academic salaries",
-            author: "Pouria Mohammad",
-            avatar: boy
+            img: carbon,
+            badge: t("badge.sickness"),
+            type:  t("type.hot"),
+            date: "2",
+            title: t("news_list.title4"),
+            author: t("names.name2"),
+            avatar: girl2
         },
     ]
 
