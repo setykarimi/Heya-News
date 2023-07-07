@@ -1,8 +1,11 @@
 import { More } from 'iconsax-react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 const CardNews = ({ img, badge, type, date, title, author, avatar }) => {
+    const { t, i18n } = useTranslation();
+
     const [dropDown, setDropDown] = useState(false)
 
     const openDropDown = () => {
@@ -18,8 +21,8 @@ const CardNews = ({ img, badge, type, date, title, author, avatar }) => {
 
             <div className='flex flex-col gap-2 p-3'>
                 <div className='flex justify-between'>
-                    <span className=' text-gray-400 text-xs block font-light'>{type} News</span>
-                    <span className='text-gray-400 text-xs font-light'>{date} Days Ago</span>
+                    <span className=' text-gray-400 text-xs block font-light'>{type}</span>
+                    <span className='text-gray-400 text-xs font-light'>{date} {t("days_ago")}</span>
                 </div>
 
                 <span className='text-lg block font-medium'>
@@ -38,10 +41,10 @@ const CardNews = ({ img, badge, type, date, title, author, avatar }) => {
                 </div>
             </div>
 
-            <div className={`absolute bottom-12 -right-6 bg-white p-5 rounded-lg shadow-xl flex flex-col gap-3 transition-all
+            <div className={`absolute bottom-12 ${i18n.language == "en" ? "-right-6" : "-left-6"}  bg-white p-5 rounded-lg shadow-xl flex flex-col gap-3 transition-all
             ${dropDown ? "block z-10" : "hidden"}`}>
-                <button className='text-sm text-left'>Like</button>
-                <Link to="/news/popular" className='text-sm text-left'>Read more</Link>
+                <button className='text-sm text-left'>{t("like")}</button>
+                <Link to="/news/popular" className='text-sm text-left'>{t("read_more")}</Link>
             </div>
         </div>
     );
