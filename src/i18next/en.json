@@ -1,5 +1,4 @@
 {
-    "welcome": "Welcome to my website!",
     "navbar": {
         "home": "Home",
         "pages": "Pages",
@@ -18,5 +17,28 @@
     "popular_articles": {
         "popular_article": "Popular Articles",
         "desc": "We share common trends, strategies ideas, opinions, short & long stories from the team behind company."
-    }
+    },
+    "badge": {
+        "university": "University",
+        "students": "Students",
+        "camping": "Camping",
+        "sickness": "Sickness"
+    },
+    "type": {
+        "trending": "Trending",
+        "hot": "Hot"
+    },
+    "news_list": {
+        "title1": "Report reveals ‘disturbing’ trends in academic salaries",
+        "title2": "Homesickness. One of the first challenges",
+        "title3": "Camping is a broad term but in its essence",
+        "title4": " When people are exposed to CO gas, the CO molecules will "
+    },
+    "names": {
+        "name1": "Pouria Makhdoomi",
+        "name2": "Ashvaria Miza",
+        "name3": "Ava Moun"
+    },
+    "days_ago": "Days ago",
+    "like": "Like"
 }
