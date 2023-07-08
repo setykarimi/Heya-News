@@ -9,65 +9,68 @@ import rent from 'Images/travel/rent.png';
 import carbon from 'Images/carbonMonoxide/carbonMonoxide.png';
 import university from 'Images/university/university.png';
 import CardExplore from "../cardExplore";
+import { useTranslation } from "react-i18next";
 
 export default function TodayHeadlines  () {
+    const { t } = useTranslation();
+
     const news = [
         {
-            type: "Family",
+            type: t('badge.family'),
             date: "11:20",
-            title: "Woman Up: It's about time we redefine what ",
+            title: t('today_headlines.list.1'),
             avatar: avatar1,
-            author: "Mona Sadri",
+            author: t('names.name3'),
             img: motherHood
         },
         {
-            type: "Travel",
+            type: t('badge.travel'),
             date: "09:30",
-            title: "Camping Up: It's about time we redefine what ",
+            title: t('today_headlines.list.2'),
             avatar: avatar2,
-            author: "Sina Mip",
+            author: t('names.name4'),
             img: camping
         },
         {
-            type: "University",
+            type: t('badge.university'),
             date: "10:00",
-            title: "Get Mental Health Content from Therapy",
+            title:t('today_headlines.list.3'),
             avatar: avatar3,
-            author: "Sosha Kari",
+            author: t('names.name5'),
             img: friends
         },
         {
-            type: "Travel",
+            type: t('badge.travel'),
             date: "14:50",
-            title: "Trip time: It's about time we redefine what ",
+            title: t('today_headlines.list.4'),
             avatar: avatar2,
-            author: "Sona Mira",
+            author: t('names.name6'),
             img: rent
         },
         {
-            type: "Other",
+            type: t('badge.other'),
             date: "09:30",
-            title: "CarbonMonoxide: Bad affects on human",
+            title: t('today_headlines.list.5'),
             avatar: avatar2,
-            author: "Ava Mip",
+            author:t('names.name1'),
             img: carbon
         },
         {
-            type: "University",
+            type: t('badge.university'),
             date: "10:00",
-            title: "Study Free: London Universities",
+            title:t('today_headlines.list.6'),
             avatar: avatar1,
-            author: "Mohammad Baghi",
+            author: t('names.name2'),
             img: university
         }
     ]
 
     return (
         <div className='mt-24'>
-            <h2 className='text-3xl text-gray-800 font-medium'>Today Headlines</h2>
+            <h2 className='text-3xl text-gray-800 font-medium'>{t('today_headlines.title')}</h2>
             <div className='md:flex justify-between items-center mb-4'>
-                <p className='text-gray-500 mt-2 font-light'>Top today news in the US right now</p>
-                <Link to='' className=' outline-blue-500 h-full text-gray-400 text-sm  rounded-lg whitespace-nowrap'>See more</Link>
+                <p className='text-gray-500 mt-2 font-light'>{t('today_headlines.desc')}</p>
+                <Link to='' className=' outline-blue-500 h-full text-gray-400 text-sm  rounded-lg whitespace-nowrap'>{t("read_more")}</Link>
             </div>
             <div className="grid lg:md:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 mb-8">
                 {news.map(({type, date, title, avatar, author, img})=> <CardExplore key={title}
