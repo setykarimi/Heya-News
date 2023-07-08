@@ -1,8 +1,11 @@
 import { More } from 'iconsax-react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 const CardExplore = ({ type, date, title, avatar, author, img }) => {
+    const { t } = useTranslation();
+
     const [dropDown, setDropDown] = useState(false)
 
     const openDropDown = () => {
@@ -14,7 +17,7 @@ const CardExplore = ({ type, date, title, avatar, author, img }) => {
             <div className="col-span-2 flex flex-col gap-2 p-3 ">
                 <div className="flex justify-between">
                     <span className='text-gray-400 text-xs block font-light'>{type}</span>
-                    <span className='text-gray-400 text-xs block font-light'>Today, {date}</span>
+                    <span className='text-gray-400 text-xs block font-light'>{t("badge.today")}, {date}</span>
                 </div>
 
                 <span className="block text-lg font-medium">
@@ -27,7 +30,7 @@ const CardExplore = ({ type, date, title, avatar, author, img }) => {
                         <span className='text-sm'>{author}</span>
                     </div>
 
-                   <Link to="/news/today-headlines" className='text-xs text-gray-400'>Read more</Link>
+                   <Link to="/news/today-headlines" className='text-xs text-gray-400'>{t("read_more")}</Link>
                 </div>
             </div>
 
