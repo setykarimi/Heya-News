@@ -22,7 +22,11 @@
         "university": "University",
         "students": "Students",
         "camping": "Camping",
-        "sickness": "Sickness"
+        "sickness": "Sickness",
+        "family": "family",
+        "travel": "travel",
+        "other": "other",
+        "today": "Today"
     },
     "type": {
         "trending": "Trending",
@@ -37,8 +41,23 @@
     "names": {
         "name1": "Pouria Makhdoomi",
         "name2": "Ashvaria Miza",
-        "name3": "Ava Moun"
+        "name3": "Ava Moun",
+        "name4": "Sina Karimi",
+        "name5": "Mona Sadri",
+        "name6": "Mohammad Baghi"
     },
     "days_ago": "Days ago",
-    "like": "Like"
+    "like": "Like",
+    "today_headlines": {
+        "title": "Today Headlines",
+        "desc": "Top today news in the US right now",
+        "list": {
+            "1": "It's about time we redefine what",
+            "2": "The Republic of Azerbaijan Religion Law and ...",
+            "3": "Get Mental Health Content from Therapy",
+            "4": "Carbon Monoxide: Bad effects on human",
+            "5": "Study Free: London Universities",
+            "6": "It seems that more churches than..."
+        }
+    }
 }
