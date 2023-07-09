@@ -59,5 +59,17 @@
             "5": "Study Free: London Universities",
             "6": "It seems that more churches than..."
         }
+    },
+
+    "footer": {
+        "title": "Get our stories delivered From us to your inbox weekly.",
+        "your_email": "Your Email",
+        "get_started": "Get Started",
+        "desc": "Get a response tomorrow if you submit by 9pm today. If we received after 9pm will get a response the following day.",
+        "card": {
+            "title": "The best articles every week",
+            "desc": "Our insurance plans offers are priced the same everywhere else."
+        }
     }
+    
 }
