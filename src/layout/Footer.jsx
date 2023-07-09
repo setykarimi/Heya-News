@@ -1,8 +1,11 @@
-import girl from 'Images/people/girlThree.png';
 import logo from 'Images/Logo.svg';
+import girl from 'Images/people/girlThree.png';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+    const { t } = useTranslation();
+
     const socialMedia = [
         {
             title: "Twitter",
@@ -48,15 +51,15 @@ const Footer = () => {
                     <div className="items-center grid md:grid-cols-2 grid-cols-1 gap-4 pb-20 border-b border-b-gray-800">
                         <div className="flex flex-col gap-8">
                             <span className="block font-medium lg:text-3xl md:text-2xl text-xl text-white">
-                                Get our stories delivered From us to your inbox weekly.
+                                {t("footer.title")}
                             </span>
 
                             <div className="flex gap-1 w-full">
-                                <input type="text" className="bg-white w-2/3 rounded-lg py-2 px-4 text-sm placeholder:text-xs outline-none" placeholder="Your Email" />
-                                <button className="bg-blue-500 h-full text-white py-2 px-4 text-sm rounded-lg font-light">Get Started</button>
+                                <input type="text" className="bg-white w-2/3 rounded-lg py-2 px-4 text-sm placeholder:text-xs outline-none" placeholder={t("footer.your_email")} />
+                                <button className="bg-blue-500 h-full text-white py-2 px-4 text-sm rounded-lg font-light">{t("footer.get_started")}</button>
                             </div>
                             <span className="block font-light text-gray-400 text-xs">
-                                Get a response tomorrow if you submit by 9pm today. If we received after 9pm will get a response the following day.
+                              {t("footer.desc")}
                             </span>
                         </div>
 
@@ -64,8 +67,8 @@ const Footer = () => {
                             <div className="bg-white p-1 lg:w-1/2 rounded-2xl" style={{zIndex: '1'}}>
                                 <img src={girl} alt="email" className='w-full rounded-2xl object-cover object-top h-56' />
                                 <div className='p-3'>
-                                    <span className='block font-medium text-lg mb-2'>The best articles every week</span>
-                                    <span className='block font-light text-gray-400'>Our insurance plans offers are priced the same everywhere else.</span>
+                                    <span className='block font-medium text-lg mb-2'>{t("footer.card.title")}</span>
+                                    <span className='block font-light text-gray-400 text-sm'>{t("footer.card.desc")}</span>
                                 </div>
                             </div>
                             <div className='lg:block hidden bg-blue-700 w-40 h-40 absolute rounded-lg -top-10 right-28'></div>
