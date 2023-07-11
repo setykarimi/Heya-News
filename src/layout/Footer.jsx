@@ -8,23 +8,23 @@ const Footer = () => {
 
     const socialMedia = [
         {
-            title: "Twitter",
+            title: t("social_media.linkedin"),
             to: ""
         },
         {
-            title: "Linkedin",
+            title:t("social_media.twitter"),
             to: ""
         },
         {
-            title: "Instagram",
+            title: t("social_media.google"),
             to: ""
         },
         {
-            title: "Google",
+            title: t("social_media.instagram"),
             to: ""
         },
         {
-            title: "Youtube",
+            title: t("social_media.youtube"),
             to: ""
         },
     ]
@@ -80,7 +80,7 @@ const Footer = () => {
                         <div className='md:col-span-1 col-span-2 flex flex-col gap-4'>
                             <img src={logo} alt='logo' className='w-20' />
                             <span className='block text-gray-500'>
-                                Build a modern and creative website with crealand
+                               {t("footer.build")}
                             </span>
                             <div className='flex flex-wrap text-gray-500 gap-4 text-sm'>
                                 {socialMedia.map(({ title, to }) => <Link key={title} to={to}>{title}</Link>)}
