@@ -72,11 +72,26 @@
     },
     "build": "Build a modern and creative website with heya"
   },
+
   "social_media": {
     "linkedin": "Linkedin",
     "twitter": "Twitter",
     "google": "Google",
     "instagram": "Instagram",
     "youtube": "Youtube"
+  },
+
+  "product": {
+    "title" : "product",
+    "": ""
+  },
+  "services": {
+    "title": "Services"
+  },
+  "company": {
+    "title": "Company"
+  },
+  "more": {
+    "title": "More"
   }
 }
