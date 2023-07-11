@@ -1,75 +1,82 @@
 {
-    "navbar": {
-        "home": "Home",
-        "pages": "Pages",
-        "docs": "Docs",
-        "login": "Login",
-        "search": "Search",
-        "searchArticle": "Search article"
-    },
-    "banner": {
-        "title": "Cheap Airline Tickets Great Ways To Save",
-        "content": "In this digital generation where information can be easily obtained within seconds business cards since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Dived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It has survived not only five centuries, but also the leap into electronic typesetting, remaining not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Dived not only five ",
-        "author": "Viola Manisa",
-        "date": "02 May"
-    },
-    "read_more": "Read more",
-    "popular_articles": {
-        "popular_article": "Popular Articles",
-        "desc": "We share common trends, strategies ideas, opinions, short & long stories from the team behind company."
-    },
-    "badge": {
-        "university": "University",
-        "students": "Students",
-        "camping": "Camping",
-        "sickness": "Sickness",
-        "family": "family",
-        "travel": "travel",
-        "other": "other",
-        "today": "Today"
-    },
-    "type": {
-        "trending": "Trending",
-        "hot": "Hot"
-    },
-    "news_list": {
-        "title1": "Report reveals ‘disturbing’ trends in academic salaries",
-        "title2": "Homesickness. One of the first challenges",
-        "title3": "Camping is a broad term but in its essence",
-        "title4": " When people are exposed to CO gas, the CO molecules will "
-    },
-    "names": {
-        "name1": "Pouria Makhdoomi",
-        "name2": "Ashvaria Miza",
-        "name3": "Ava Moun",
-        "name4": "Sina Karimi",
-        "name5": "Mona Sadri",
-        "name6": "Mohammad Baghi"
-    },
-    "days_ago": "Days ago",
-    "like": "Like",
-    "today_headlines": {
-        "title": "Today Headlines",
-        "desc": "Top today news in the US right now",
-        "list": {
-            "1": "It's about time we redefine what",
-            "2": "The Republic of Azerbaijan Religion Law and ...",
-            "3": "Get Mental Health Content from Therapy",
-            "4": "Carbon Monoxide: Bad effects on human",
-            "5": "Study Free: London Universities",
-            "6": "It seems that more churches than..."
-        }
-    },
-
-    "footer": {
-        "title": "Get our stories delivered From us to your inbox weekly.",
-        "your_email": "Your Email",
-        "get_started": "Get Started",
-        "desc": "Get a response tomorrow if you submit by 9pm today. If we received after 9pm will get a response the following day.",
-        "card": {
-            "title": "The best articles every week",
-            "desc": "Our insurance plans offers are priced the same everywhere else."
-        }
+  "navbar": {
+    "home": "Home",
+    "pages": "Pages",
+    "docs": "Docs",
+    "login": "Login",
+    "search": "Search",
+    "searchArticle": "Search article"
+  },
+  "banner": {
+    "title": "Cheap Airline Tickets Great Ways To Save",
+    "content": "In this digital generation where information can be easily obtained within seconds business cards since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Dived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It has survived not only five centuries, but also the leap into electronic typesetting, remaining not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Dived not only five ",
+    "author": "Viola Manisa",
+    "date": "02 May"
+  },
+  "read_more": "Read more",
+  "popular_articles": {
+    "popular_article": "Popular Articles",
+    "desc": "We share common trends, strategies ideas, opinions, short & long stories from the team behind company."
+  },
+  "badge": {
+    "university": "University",
+    "students": "Students",
+    "camping": "Camping",
+    "sickness": "Sickness",
+    "family": "family",
+    "travel": "travel",
+    "other": "other",
+    "today": "Today"
+  },
+  "type": {
+    "trending": "Trending",
+    "hot": "Hot"
+  },
+  "news_list": {
+    "title1": "Report reveals ‘disturbing’ trends in academic salaries",
+    "title2": "Homesickness. One of the first challenges",
+    "title3": "Camping is a broad term but in its essence",
+    "title4": " When people are exposed to CO gas, the CO molecules will "
+  },
+  "names": {
+    "name1": "Pouria Makhdoomi",
+    "name2": "Ashvaria Miza",
+    "name3": "Ava Moun",
+    "name4": "Sina Karimi",
+    "name5": "Mona Sadri",
+    "name6": "Mohammad Baghi"
+  },
+  "days_ago": "Days ago",
+  "like": "Like",
+  "today_headlines": {
+    "title": "Today Headlines",
+    "desc": "Top today news in the US right now",
+    "list": {
+      "1": "It's about time we redefine what",
+      "2": "The Republic of Azerbaijan Religion Law and ...",
+      "3": "Get Mental Health Content from Therapy",
+      "4": "Carbon Monoxide: Bad effects on human",
+      "5": "Study Free: London Universities",
+      "6": "It seems that more churches than..."
     }
-    
+  },
+
+  "footer": {
+    "title": "Get our stories delivered From us to your inbox weekly.",
+    "your_email": "Your Email",
+    "get_started": "Get Started",
+    "desc": "Get a response tomorrow if you submit by 9pm today. If we received after 9pm will get a response the following day.",
+    "card": {
+      "title": "The best articles every week",
+      "desc": "Our insurance plans offers are priced the same everywhere else."
+    },
+    "build": "Build a modern and creative website with heya"
+  },
+  "social_media": {
+    "linkedin": "Linkedin",
+    "twitter": "Twitter",
+    "google": "Google",
+    "instagram": "Instagram",
+    "youtube": "Youtube"
+  }
 }
