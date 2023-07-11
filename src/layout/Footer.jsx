@@ -88,28 +88,28 @@ const Footer = () => {
                         </div>
 
                         <div className='flex flex-col gap-4'>
-                            <span className='font-medium block text-gray-400'>Product</span>
+                            <span className='font-medium block text-gray-400'>{t("product.title")}</span>
                             <div className='text-gray-500 flex flex-col gap-2 text-sm'>
                                 {product.map((title) => <Link key={title}>{title}</Link>)}
                             </div>
                         </div>
 
                         <div className='flex flex-col gap-4'>
-                            <span className='font-medium block text-gray-400'>Services</span>
+                            <span className='font-medium block text-gray-400'>{t("services.title")}</span>
                             <div className='text-gray-500 flex flex-col gap-2 text-sm'>
                                 {services.map((title) => <Link key={title}>{title}</Link>)}
                             </div>
                         </div>
 
                         <div className='flex flex-col gap-4'>
-                            <span className='font-medium block text-gray-400'>Company</span>
+                            <span className='font-medium block text-gray-400'>{t("company.title")}</span>
                             <div className='text-gray-500 flex flex-col gap-2 text-sm'>
                                 {company.map((title) => <Link key={title}>{title}</Link>)}
                             </div>
                         </div>
 
                         <div className='flex flex-col gap-4'>
-                            <span className='font-medium block text-gray-400'>More</span>
+                            <span className='font-medium block text-gray-400'>{t("more.title")}</span>
                             <div className='text-gray-500 flex flex-col gap-2 text-sm'>
                                 {more.map((title) => <Link key={title}>{title}</Link>)}
                             </div>
