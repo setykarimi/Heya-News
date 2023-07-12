@@ -30,19 +30,20 @@ const Footer = () => {
     ]
 
     const product = [
-        "LandingPage", "Features", "Documention", "Referral Program", "Pricing"
+        t("product.landing"), t("product.features"),
+        t("product.documentions"),t("product.referral_program"),t("product.pricing")
     ]
 
     const services = [
-        "Documention", "Design", "Themes", "Illustration", "UI Kit"
+        t("services.documentions"), t("services.design"), t("services.themes"), t("services.illustration"), t("services.ux_kit")
     ]
 
     const company = [
-        "About", "Terms", "Privacy Policy", "Careers"
+        t("company.about"), t("company.terms"), t("company.privacy_policy"), t("company.careers")
     ]
 
     const more = [
-        "Documention", "License", "Changelog"
+        t("more.documention"),t("more.license"),t("more.change_log")
     ]
     return (
         <div className="bg-gray-900 lg:py-20 lg:px-0 md:py-16 md:px-4 p-4 mt-24">
@@ -78,7 +79,7 @@ const Footer = () => {
 
                     <div className='grid md:grid-cols-5 grid-cols-2 mt-10 gap-4'>
                         <div className='md:col-span-1 col-span-2 flex flex-col gap-4'>
-                            <img src={logo} alt='logo' className='w-20' />
+                            <img src={logo} alt='logo' className='w-20 filter grayscale contrast-0' />
                             <span className='block text-gray-500'>
                                {t("footer.build")}
                             </span>
