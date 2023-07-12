@@ -79,16 +79,33 @@
     "youtube": "یوتیوب"
   },
   "product": {
-    "title": "محصول"
+    "title": "محصول",
+    "landing": "صفحات",
+    "features": "امکانات",
+    "documentions": "مستندات",
+    "referral_program": "برنامه ارجاع",
+    "pricing": "قیمت‌گذاری"
   },
   "services": {
-    "title": "سرویس‌ها"
+    "title": "سرویس‌ها",
+    "documentions": "مستندات",
+    "design": "طراحی",
+    "themes": "تم‌ها",
+    "illustration": "تصویر",
+    "ux_kit": "کیت طراحی"
   },
   "company": {
-    "title": "شرکت"
+    "title": "شرکت",
+    "about": "درباره‌ما",
+    "terms" : "قوانین",
+    "privacy_policy": "حریم خصوصی",
+    "careers": "مشاغل"
   },
   "more": {
-    "title": "سایر"
+    "title": "سایر",
+    "documention": "مستندات",
+    "license": "مجوز",
+    "change_log": "تغییر گزارش"
   }
   
 }
