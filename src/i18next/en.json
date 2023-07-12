@@ -83,15 +83,31 @@
 
   "product": {
     "title" : "product",
-    "": ""
+    "landing": "Landings",
+    "features": "Features",
+    "documentions": "Documentions",
+    "referral_program": "Referral program",
+    "pricing": "Pricing"
   },
   "services": {
-    "title": "Services"
+    "title": "Services",
+    "documentions": "Documentions",
+    "design": "Design",
+    "themes": "Themes",
+    "illustration": "Illustration",
+    "ux_kit": "Ux Kit"
   },
   "company": {
-    "title": "Company"
+    "title": "Company",
+    "about": "About",
+    "terms" : "Terms",
+    "privacy_policy": "Privacy Policy",
+    "careers": "Careers"
   },
   "more": {
-    "title": "More"
+    "title": "More",
+    "documention": "Documention",
+    "license": "License",
+    "change_log": "Change log"
   }
 }
