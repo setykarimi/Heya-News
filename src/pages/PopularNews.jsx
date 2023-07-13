@@ -1,18 +1,27 @@
 import CardNewsDetail from "Cards/cardNewsDetail";
 import CardTitle from "Cards/cardTitle";
 import axios from "axios";
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { useQuery } from "react-query";
 
 const PopularNews = () => {
+    const { t } = useTranslation();
+
     async function fetchData() {
         const { data } = await axios.get(`https://techcrunch.com/wp-json/wp/v2/posts?per_page=5&context=embed&search=popular`);
         return data;
     }
+
     const { data, isError, isLoading } = useQuery("news", fetchData);
+
+    useEffect(()=> {
+        fetchData()
+    },[])
 
     return (
         <div>
-            <CardTitle title="Popular Articles" description="We share common trends, startegies ideas, opinions, short & long stories from the team behind company." />
+            <CardTitle title={t("popular_articles.popular_article")} description={t("popular_articles.desc")} />
             <div className="flex flex-col gap-8 mt-12">
             {isLoading ? <div>Loading</div> : isError ? <div>Error</div> :
                 data.map((item, index) => <CardNewsDetail key={item.id} data={item} index={index}/>)}
