@@ -6,9 +6,11 @@ import * as Yup from 'yup'
 import { toast } from 'react-toastify';
 import { useDispatch } from 'react-redux';
 import { ADD_USER_INFO } from 'Services/reducers/auth';
+import { useTranslation } from 'react-i18next';
 
 
 const Login = () => {
+    const { t } = useTranslation();
 
     const navigate = useNavigate()
     const dispatch = useDispatch()
@@ -28,7 +30,7 @@ const Login = () => {
     })
 
     const onSubmit = (values) => {
-        toast.success("Welcome back!")
+        toast.success(t("navbar.welcome_back"))
         localStorage.setItem('auth', JSON.stringify({
             email: values.email,
             password: values.password
