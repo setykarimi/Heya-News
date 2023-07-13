@@ -16,7 +16,7 @@ const Navbar = ({ showMenu, setShowMenu }) => {
             title: t("navbar.home"),
             link: '/'
         },
-    
+
         {
             title: t("navbar.pages"),
             link: ''
@@ -25,7 +25,7 @@ const Navbar = ({ showMenu, setShowMenu }) => {
             title: t("navbar.docs"),
             link: ''
         },
-        
+
     ]
 
     const showMenuHandler = () => {
@@ -62,13 +62,13 @@ const Navbar = ({ showMenu, setShowMenu }) => {
                     {
                         auth.email ? <Link to="/profile" className='border border-gray-200 text-sm whitespace-nowrap py-1 ml-4 rounded-full font-medium flex items-center px-2'>
                             <ProfileCircle size="28" color="#3B82F6" variant="Bulk" />
-                           <span className='block px-2'> Profile</span>
+                            <span className='block px-2'>{t("navbar.profile")}</span>
                         </Link> :
                             <Link to="/login" className='border border-gray-200 text-sm whitespace-nowrap py-2 px-6 ml-4 rounded-full font-medium'>{t("navbar.login")}</Link>
                     }
                     <button onClick={changeLangHandler} className='font-bold text-sm flex items-center'>
-                    <Flag size="25" color="#B1CDFB" variant="Bulk"/>
-                   {i18n.language}
+                        <Flag size="25" color="#B1CDFB" variant="Bulk" />
+                        {i18n.language}
                     </button>
                 </div>
 
