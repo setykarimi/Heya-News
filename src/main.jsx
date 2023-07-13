@@ -45,35 +45,37 @@ const router = createBrowserRouter([
         path: "/news/today-headlines",
         element: <TodayHeadlines />,
       },
-    
+
     ]
   },
   {
     path: "/profile",
     element: <Profile />,
   }
- 
+
 ]);
 
 const queryClient = new QueryClient();
 ReactDOM.createRoot(document.getElementById('root')).render(
-
-  <React.StrictMode>
-    <I18nextProvider i18n={i18n}>
-      <Provider store={store}>
-        <QueryClientProvider client={queryClient}>
-          <ToastContainer position="top-center"
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss={false}
-            draggable
-            pauseOnHover={false}
-            theme="colored" />
-          <RouterProvider router={router} />
-        </QueryClientProvider>
-      </Provider>
-    </I18nextProvider>
-  </React.StrictMode>,
+  <div style={{ direction: i18n.language == "fa" ? "rtl" : "ltr", fontFamily: i18n.language == "fa" && "Vazir" }}>
+    <React.StrictMode>
+      <I18nextProvider i18n={i18n}>
+        <Provider store={store}>
+          <QueryClientProvider client={queryClient}>
+            <ToastContainer position="top-center"
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss={false}
+              draggable
+              pauseOnHover={false}
+              theme="colored" />
+            <RouterProvider router={router} />
+          </QueryClientProvider>
+        </Provider>
+      </I18nextProvider>
+    </React.StrictMode>
+  </div>
+  ,
 )
