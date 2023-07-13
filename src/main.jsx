@@ -57,11 +57,11 @@ const router = createBrowserRouter([
 
 const queryClient = new QueryClient();
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <div style={{ direction: i18n.language == "fa" ? "rtl" : "ltr", fontFamily: i18n.language == "fa" && "Vazir" }}>
+ 
     <React.StrictMode>
       <I18nextProvider i18n={i18n}>
         <Provider store={store}>
-          <QueryClientProvider client={queryClient}>
+          <QueryClientProvider client={queryClient}> 
             <ToastContainer position="top-center"
               hideProgressBar={false}
               newestOnTop={false}
@@ -71,11 +71,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
               draggable
               pauseOnHover={false}
               theme="colored" />
-            <RouterProvider router={router} />
+            <RouterProvider router={router} />  
           </QueryClientProvider>
         </Provider>
       </I18nextProvider>
     </React.StrictMode>
-  </div>
+
   ,
 )
