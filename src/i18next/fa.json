@@ -108,6 +108,12 @@
     "documention": "مستندات",
     "license": "مجوز",
     "change_log": "تغییر گزارش"
+  },
+
+  "language": {
+    "language": "زبان",
+    "en": "انگلیسی",
+    "fa": "فارسی"
   }
   
 }

@@ -111,5 +111,10 @@
     "documention": "Documention",
     "license": "License",
     "change_log": "Change log"
+  },
+  "language": {
+    "language": "Language",
+    "en": "English",
+    "fa": "Persian"
   }
 }
