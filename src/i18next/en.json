@@ -116,5 +116,18 @@
     "language": "Language",
     "en": "English",
     "fa": "Persian"
+  },
+  "profile": {
+    "name": "Setayesh Karimi",
+    "job": "FrontEnd Developer",
+    "desc": "Passionate about capturing all of life's important occasions.",
+    "location": "Tehran, Iran",
+    "post": "Post",
+    "followers": "Followers",
+    "following": "Following",
+    "exit": "Exit"
+
+
+
   }
 }
