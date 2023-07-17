@@ -23,7 +23,7 @@ const News = () => {
     }
 
     return (
-        <div>
+        <div className="xl:w-10/12 lg:w-11/12 md:w-full mx-auto">
             <div className="flex flex-col gap-8 mt-12">
                 {data.map((item, index) => <CardNewsDetail key={item.id} data={item} index={index} />)}
             </div>

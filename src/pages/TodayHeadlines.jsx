@@ -20,7 +20,7 @@ const TodayHeadlines = () => {
     }, [])
 
     return (
-        <div>
+        <div className="xl:w-10/12 lg:w-11/12 md:w-full mx-auto">
             <CardTitle title={t("today_headlines.title")} description={t("today_headlines.desc")} />
             <div className="flex flex-col gap-8 mt-12">
                 {isLoading ? <div>Loading</div> : isError ? <div>Error</div> :
