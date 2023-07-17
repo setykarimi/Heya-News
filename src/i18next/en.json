@@ -62,7 +62,6 @@
       "6": "It seems that more churches than..."
     }
   },
-
   "footer": {
     "title": "Get our stories delivered From us to your inbox weekly.",
     "your_email": "Your Email",
@@ -74,7 +73,6 @@
     },
     "build": "Build a modern and creative website with heya"
   },
-
   "social_media": {
     "linkedin": "Linkedin",
     "twitter": "Twitter",
@@ -82,9 +80,8 @@
     "instagram": "Instagram",
     "youtube": "Youtube"
   },
-
   "product": {
-    "title" : "product",
+    "title": "product",
     "landing": "Landings",
     "features": "Features",
     "documentions": "Documentions",
@@ -102,7 +99,7 @@
   "company": {
     "title": "Company",
     "about": "About",
-    "terms" : "Terms",
+    "terms": "Terms",
     "privacy_policy": "Privacy Policy",
     "careers": "Careers"
   },
@@ -127,7 +124,6 @@
     "following": "Following",
     "exit": "Exit"
   },
-
   "latest_news": {
     "title": "Latest News",
     "news1": {
@@ -145,5 +141,11 @@
       "desc": "A federal court blocked Florida’s new drag show law, ruling the state’s effort to bar children from attending “adult live performances,” is overly vague and likely unconstitutional",
       "date": "2022 - present"
     }
+  },
+  "my_likes": {
+    "title": "My Likes",
+    "like1": "The attacker faces sentencing after pleading guilty to federal hate crimes charges.",
+    "like2": "Emotional testimony from survivors and victims’ families began on Wednesday in the federal sentencing hearing",
+    "like3": "In the federal case, where testimony on a possible sentence was expected to last at least two days, prosecutors agreed with the"
   }
 }
