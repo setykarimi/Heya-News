@@ -45,13 +45,13 @@ const router = createBrowserRouter([
         path: "/news/today-headlines",
         element: <TodayHeadlines />,
       },
-
+      {
+        path: "/profile",
+        element: <Profile />,
+      }
     ]
   },
-  {
-    path: "/profile",
-    element: <Profile />,
-  }
+  
 
 ]);
 
