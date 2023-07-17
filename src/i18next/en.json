@@ -126,8 +126,24 @@
     "followers": "Followers",
     "following": "Following",
     "exit": "Exit"
+  },
 
-
-
+  "latest_news": {
+    "title": "Latest News",
+    "news1": {
+      "title": "Woman Up: It's about time we redefine what",
+      "desc": "Delaware Democrat Sarah McBride, who in 2020 became the nation’s first openly transgender state senator, is setting out to make history again — this time as the first out transgender person elected to Congress.",
+      "date": "2020 - present"
+    },
+    "news2": {
+      "title": "Camping Up: It's about time we redefine what",
+      "desc": "A Christian-owned wellness center, Braidwood, is exempted from the federal law prohibiting employers from discriminating on the basis of sexual orientation and gender identity, a federal appeals court ruled last week.",
+      "date": "2020 - 2022"
+    },
+    "news3": {
+      "title": "Get Mental Health Content from Therapy",
+      "desc": "A federal court blocked Florida’s new drag show law, ruling the state’s effort to bar children from attending “adult live performances,” is overly vague and likely unconstitutional",
+      "date": "2022 - present"
+    }
   }
 }
