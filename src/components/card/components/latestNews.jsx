@@ -4,33 +4,36 @@ import friends from 'Images/university/freinds.png';
 import { Link2 } from 'iconsax-react';
 import { Link } from 'react-router-dom';
 import { CardArticle } from "../cardArticle";
+import { useTranslation } from 'react-i18next';
 
 const LatestNews = () => {
 
+    const { t } = useTranslation();
+
     const news = [
         {
-            date: "2020 - present",
-            title: "Woman Up: It's about time we redefine what ",
-            content: "Delaware Democrat Sarah McBride, who in 2020 became the nation’s first openly transgender state senator, is setting out to make history again — this time as the first out transgender person elected to Congress.",
+            date: t("latest_news.news1.date"),
+            title: t("latest_news.news1.title"),
+            content: t("latest_news.news1.desc"),
             img: motherHood
         },
         {
-            date: "2020 - 2022",
-            title: "Camping Up: It's about time we redefine what ",
-            content: "A Christian-owned wellness center, Braidwood, is exempted from the federal law prohibiting employers from discriminating on the basis of sexual orientation and gender identity, a federal appeals court ruled last week.",
+            date: t("latest_news.news2.date"),
+            title: t("latest_news.news2.title"),
+            content: t("latest_news.news2.desc"),
             img: camping
         },
         {
-            date: "2022 - present",
-            title: "Get Mental Health Content from Therapy",
-            content: "A federal court blocked Florida’s new drag show law, ruling the state’s effort to bar children from attending “adult live performances,” is overly vague and likely unconstitutional",
+            date: t("latest_news.news3.date"),
+            title: t("latest_news.news3.title"),
+            content: t("latest_news.news3.desc"),
             img: friends
         },
     ]
     return (
         <div className="bg-white rounded-xl">
             <h2 className='text-xl text-blue-gray-950 font-bold mb-4 md:p-8 p-4 border-b border-gray-100'>
-                Latest News
+            {t("latest_news.title")}
             </h2>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 md:p-8 p-4">
                 {news.map((item) => <CardArticle key={item.title} data={item} />)}
