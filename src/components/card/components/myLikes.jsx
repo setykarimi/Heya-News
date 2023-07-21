@@ -27,7 +27,7 @@ const MyLikes = () => {
                 {t("my_likes.title")}
             </h2>
             <div className="p-4 grid xl:grid-cols-1 md:grid-cols-2 grid-cols-1 gap-4">
-                {like.map((item) => <CardLike key={item.content} img={item.img} content={item.content} />)}
+                {like.map((item, index) => <CardLike key={index} img={item.img} content={item.content} />)}
             </div>
         </div>
     );
