@@ -156,5 +156,21 @@
       "title2": "Friendship & drug-resistant infections; Domestic cats",
       "desc2": "The app opens up to a scrollable feed of short-form text limited to 500 characters a post, with the ability to add individual or carousel photos and videos. Posts will include content from accounts users"
     }
+  },
+  "login": {
+    "welcome": "Welcome back",
+    "welcome_details": "Welcome back! Please enter your details",
+    "email": "Email",
+    "enter_email": "Please enter your email",
+    "password": "Password",
+    "enter_pass": "Please enter your password",
+    "remember": "Remember for 30 days",
+    "forgot": "Forgot Password",
+    "dont_have_account": "Don't have an account؟",
+    "sign_up": "Sign up",
+    "required_email": "Email is required",
+    "pass_required": "Password is required",
+    "short_pass": "Password is too short - should be 8 chars minimum.",
+    "pass_match": "Password can only contain Latin letters."
   }
 }
