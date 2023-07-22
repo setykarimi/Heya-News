@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 
 
 const Login = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const navigate = useNavigate()
     const dispatch = useDispatch()
@@ -21,9 +21,9 @@ const Login = () => {
     }
 
     const validationSchema = Yup.object({
-        email: Yup.string().required("Email is required"),
-        password: Yup.string().required("Password is required").min(8, 'Password is too short - should be 8 chars minimum.')
-            .matches(/[a-zA-Z]/, 'Password can only contain Latin letters.'),
+        email: Yup.string().required(t("login.required_email")),
+        password: Yup.string().required(t("login.pass_required")).min(8, t("login.short_pass"))
+            .matches(/[a-zA-Z]/, t("login.pass_match")),
         check: Yup.boolean()
             .required("Remember for 30 days must be accepted.")
             .oneOf([true], "Remember for 30 days must be accepted.")
@@ -45,45 +45,46 @@ const Login = () => {
         validationSchema
     })
 
-    return (<>
-        {/* <Navbar /> */}
-        <main className="xl:container mx-auto ">
-            <div className="md:w-full mx-auto">
-                <div className="grid md:grid-cols-2 h-[100vh]">
-                    <div className='flex h-full justify-center items-center md:p-4 p-8 z-10'>
-                        <div className='flex flex-col gap-6 lg:w-2/3 md:w-3/4 w-full'>
-                            <h3 className='font-bold text-3xl'>Welcome back</h3>
-                            <span className='font-light text-gray-500 text-sm'>Welcome back! Please enter your details</span>
-                            <form className='mt-6 flex flex-col gap-4' onSubmit={formik.handleSubmit}>
+    return (
+        <div style={{ direction: i18n.language == "fa" ? "rtl" : "ltr", fontFamily: i18n.language == "fa" && "Vazir" }}>
+            <main className="xl:container mx-auto ">
+                <div className="md:w-full mx-auto">
+                    <div className="grid md:grid-cols-2 h-[100vh]">
+                        <div className='flex h-full justify-center items-center md:p-4 p-8 z-10'>
+                            <div className='flex flex-col gap-6 lg:w-2/3 md:w-3/4 w-full'>
+                                <h3 className='font-bold text-3xl'>{t("login.welcome")}</h3>
+                                <span className='font-light text-gray-500 text-sm'>{t("login.welcome_details")}</span>
+                                <form className='mt-6 flex flex-col gap-4' onSubmit={formik.handleSubmit}>
 
-                                <Input label="Email" type="email" placeholder="Please enter your email" formik={formik} name="email" />
-                                <Input label="Pasword" type="password" placeholder="Please enter your password" formik={formik} name="password" />
+                                    <Input label={t("login.email")} type="email" placeholder={t("login.enter_email")} formik={formik} name="email" />
+                                    <Input label={t("login.password")} type="password" placeholder={t("login.enter_pass")} formik={formik} name="password" />
 
-                                <div className="flex items-center justify-between mb-4">
-                                    <div className='flex items-center relative'>
-                                        <input type="checkbox" name="check" onChange={formik.handleChange} onBlur={formik.handleBlur} className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded " />
-                                        <label htmlFor="check" className={`ml-1 text-sm ${formik.errors.check && formik.touched.check ? "text-red-600" : "text-gray-700"}`}>Remember for 30 days </label>
+                                    <div className="flex items-center justify-between mb-4">
+                                        <div className='flex items-center relative'>
+                                            <input type="checkbox" name="check" onChange={formik.handleChange} onBlur={formik.handleBlur} className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded " />
+                                            <label htmlFor="check" className={`ml-1 text-sm ${formik.errors.check && formik.touched.check ? "text-red-600" : "text-gray-700"}`}>{t("login.remember")}</label>
+                                        </div>
+
+                                        <Link to="/" className='text-sm text-blue-500 font-medium'>{t("login.forgot")}</Link>
                                     </div>
 
-                                    <Link to="/" className='text-sm text-blue-500 font-medium'>Forgot Password</Link>
-                                </div>
-
-                                <button className='bg-blue-500 text-white py-2 rounded-lg' type='submit' >Login</button>
-                                <div className='mx-auto'>
-                                    <span className='text-sm text-gray-700'>Don't have an account?</span>
-                                    <Link to="/" className='text-sm font-medium ml-1 text-blue-500'>Sign up</Link>
-                                </div>
-                            </form>
+                                    <button className='bg-blue-500 text-white py-2 rounded-lg' type='submit' >{t("navbar.login")}</button>
+                                    <div className='mx-auto'>
+                                        <span className='text-sm text-gray-700'>{t("login.dont_have_account")}</span>
+                                        <Link to="/" className='text-sm font-medium ml-1 text-blue-500'> {t("login.sign_up")}</Link>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div className='md:flex flex-col h-full justify-center items-center bg-white contents'>
+                            <div className='w-40 h-40 bg-blue-500 rounded-full md:static absolute top-[2rem] left-0 right-0 md:m-0 m-auto'></div>
+                            <div className='w-60 h-40 backdrop-blur-xl bg-white/30 md:-mt-20 md:static absolute top-[7rem] left-0 md:m-0 right-0 m-auto'></div>
                         </div>
                     </div>
-                    <div className='md:flex flex-col h-full justify-center items-center bg-white contents'>
-                        <div className='w-40 h-40 bg-blue-500 rounded-full md:static absolute top-[2rem] left-0 right-0 md:m-0 m-auto'></div>
-                        <div className='w-60 h-40 backdrop-blur-xl bg-white/30 md:-mt-20 md:static absolute top-[7rem] left-0 md:m-0 right-0 m-auto'></div>
-                    </div>
                 </div>
-            </div>
-        </main>
-    </>);
+            </main>
+        </div>
+    );
 }
 
 export default Login;
