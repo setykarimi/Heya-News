@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import axios from "axios";
 import { useQuery } from "react-query";
 import CardNewsDetail from "Cards/cardNewsDetail";
+import Loading from "Components/alert/loading";
 
 
 const News = () => {
@@ -15,7 +16,7 @@ const News = () => {
     const { data, isError, isLoading } = useQuery("news", fetchData);
 
     if (isLoading) {
-        return <div>is Loading</div>
+        return <Loading />
     }
 
     if(isError){
