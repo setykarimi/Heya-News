@@ -14,7 +14,8 @@ const NewsBanner = () => {
                     <h2 className='text-gray-950 font-bold xl:text-4xl md:text-2xl text-xl'>{t('banner.title')}</h2>
                     <p className='text-gray-800 font-light text-justify'>
                     {t('banner.content')}
-                        <Link to="" className='font-medium'> {t('read_more')}...</Link></p>
+                        {/* <Link to="" className='font-medium'> {t('read_more')}...</Link> */}
+                        </p>
                     <div className='flex justify-between items-center'>
                         <div className='flex items-center gap-2'>
                             <img src={avatar} alt="avatar" className='rounded-full h-8 w-8 object-cover'/>

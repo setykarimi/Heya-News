@@ -46,7 +46,7 @@ const LoginForm = () => {
     })
 
     return (
-        <div style={{ direction: i18n.language == "fa" ? "rtl" : "ltr", fontFamily: i18n.language == "fa" && "Vazir" }}>
+        <div style={{ direction: i18n.language == "fa" ? "rtl" : "ltr", fontFamily: i18n.language == "fa" && "Calibri" }}>
             <main className="xl:container mx-auto ">
                 <div className="md:w-full mx-auto">
                     <div className="grid md:grid-cols-2 h-[100vh]">
