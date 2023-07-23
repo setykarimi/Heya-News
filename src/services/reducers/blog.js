@@ -1,20 +1,21 @@
 import { createSlice } from '@reduxjs/toolkit'
 import img1 from 'Images/travel/camping.png'
 import img2 from 'Images/university/freinds.png'
+import i18n from '../../../i18n';
 
 const initialState = {
     blog: [
         {
             id: 0,
             img: img1,
-            title: "Meta CEO Mark Zuckerberg",
-            content: "Instagram’s Threads app, a text-based social media  poised to become Twitter’s latest competitor, is now available to users in more than 100 countries."
+            title: i18n.t("my_blog.list.title1"),
+            content: i18n.t("my_blog.list.desc1")
         },
         {
             id: 1,
             img: img2,
-            title: "Freindship & drug-resistant infections; Domestic cats",
-            content: "The app opens up to a scrollable feed of short-form text limited to 500 characters a post, with the ability to add individual or carousel photos and videos. Posts will include content from accounts users"
+            title: i18n.t("my_blog.list.title2"),
+            content: i18n.t("my_blog.list.desc2")
         }
     ]
 }
